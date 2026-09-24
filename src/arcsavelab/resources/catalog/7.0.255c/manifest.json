@@ -1,0 +1,273 @@
+{
+  "format": "arcsavelab.catalog-manifest/v1",
+  "game_version": "7.0.255c",
+  "outputs": {
+    "catalog.json": {
+      "file_sha256": "b1522c3b626b18191bd539db67e1f371ce5ddb83227fed15b3bfc7b3f275bc94",
+      "sha256": "0cb5e6bc41fb3e9bcd86461c7a0d2433754ee57dc9f07b9ea7b80d79dbffdbb6"
+    },
+    "schema.json": {
+      "file_sha256": "06024e579b19380c585b33c6824e3ab689bcf263ea64c362ea6ac278c9cedd9e",
+      "sha256": "5ff0251a1db7dc7341a63f311a6417b163ec6011619eb028719d9e9e1d47288d"
+    }
+  },
+  "source_apk": {
+    "filename": "arcaea_7.0.255c.apk",
+    "sha256": "5aeb5edc425808605cc8a682cd9269aecae671fdab9573376b100d08ee3577c6",
+    "size": 2118477081
+  },
+  "source_assets": [
+    {
+      "compressed_size": 227,
+      "crc32": "5104f1da",
+      "path": "assets/app-data/story/main/entries_0",
+      "sha256": "8491765ba62392c437fae102f55a1e22cd713596e3b55a9155bef6efbccacd10",
+      "size": 834
+    },
+    {
+      "compressed_size": 358,
+      "crc32": "c3c1a812",
+      "path": "assets/app-data/story/main/entries_1",
+      "sha256": "91946a85ea64ef6d652e7faf8eb2ac593c5b7052be6fdef799ac6e4c7dfe42a3",
+      "size": 2146
+    },
+    {
+      "compressed_size": 327,
+      "crc32": "83673e21",
+      "path": "assets/app-data/story/main/entries_100",
+      "sha256": "1f83a96aa4419f646f6c899efa0984c73910d4a5661acabc040f54f5848b905a",
+      "size": 1751
+    },
+    {
+      "compressed_size": 360,
+      "crc32": "f416b5a1",
+      "path": "assets/app-data/story/main/entries_101",
+      "sha256": "b1937947e816f3529d1a9957923e9026e0eed9f65220b86d3156e0e31d15a310",
+      "size": 2439
+    },
+    {
+      "compressed_size": 266,
+      "crc32": "73f1fed9",
+      "path": "assets/app-data/story/main/entries_102",
+      "sha256": "ba3f50e689f20d81cec7f8234325a93fb27d8ae22eabc2a53339819cfe7396a3",
+      "size": 1425
+    },
+    {
+      "compressed_size": 203,
+      "crc32": "20f5a18a",
+      "path": "assets/app-data/story/main/entries_103",
+      "sha256": "1b97b204f15a95fe9c0b13512100096df1aabc71f148df1d15cd9456d7016f2a",
+      "size": 459
+    },
+    {
+      "compressed_size": 364,
+      "crc32": "41063617",
+      "path": "assets/app-data/story/main/entries_2",
+      "sha256": "31ea020c2a290803ab48da30d01bdf2c3d25ef5b204ae792bec433e88af07c20",
+      "size": 2171
+    },
+    {
+      "compressed_size": 430,
+      "crc32": "63afbfc2",
+      "path": "assets/app-data/story/main/entries_20",
+      "sha256": "91d0d4f65c5e59fd71dc747ccba1b517576854e0db1f4f4d363fd7c797cecdb8",
+      "size": 2242
+    },
+    {
+      "compressed_size": 309,
+      "crc32": "cc7f35c2",
+      "path": "assets/app-data/story/main/entries_23",
+      "sha256": "b860a41dbb5ea8d0e7398bf7b6ddbea897f9f0e34c7de232a6c1b2c9ebbbc346",
+      "size": 1959
+    },
+    {
+      "compressed_size": 520,
+      "crc32": "8a348978",
+      "path": "assets/app-data/story/main/entries_24",
+      "sha256": "ac23db2dd28045d88882b3a727218d17455aedca7944d40385c6a8c00f356ba1",
+      "size": 3399
+    },
+    {
+      "compressed_size": 432,
+      "crc32": "5c722b05",
+      "path": "assets/app-data/story/paths",
+      "sha256": "0d72e263dd6245bad090d78b729405ca07fdbf6ae15639bf100e253a263176a7",
+      "size": 3188
+    },
+    {
+      "compressed_size": 282,
+      "crc32": "93bb3c23",
+      "path": "assets/app-data/story/side/entries_10",
+      "sha256": "94e02b2a7e513742adc31333f6d924b0b4114b13548115bf7e37eac8b290a603",
+      "size": 1353
+    },
+    {
+      "compressed_size": 338,
+      "crc32": "5d6a1013",
+      "path": "assets/app-data/story/side/entries_11",
+      "sha256": "c8a39a022e411765686a9753f3314183498d8f5c3bfabbae000c150b89cc4e95",
+      "size": 2149
+    },
+    {
+      "compressed_size": 356,
+      "crc32": "1b3a0967",
+      "path": "assets/app-data/story/side/entries_12",
+      "sha256": "9308793d2c7670b33317e5610d7be91fe2901bace7ea0385418ee4632dfa5592",
+      "size": 2050
+    },
+    {
+      "compressed_size": 193,
+      "crc32": "6afb0d2f",
+      "path": "assets/app-data/story/side/entries_13",
+      "sha256": "1ab60c805415d8956d07f2e9cab22e49549c4e365129fa7ef5d5adec035d448e",
+      "size": 924
+    },
+    {
+      "compressed_size": 192,
+      "crc32": "b0f0126c",
+      "path": "assets/app-data/story/side/entries_14",
+      "sha256": "5dc09e0c3ad99127e70b023aef4f2b59973c60bf2cfa92c87d0814a3d7ed7a1b",
+      "size": 924
+    },
+    {
+      "compressed_size": 283,
+      "crc32": "d0c598a7",
+      "path": "assets/app-data/story/side/entries_15",
+      "sha256": "1632584beada15625ac02ef9c7fe3c8801b12ab06fdcbcde262c64dca084628e",
+      "size": 1354
+    },
+    {
+      "compressed_size": 375,
+      "crc32": "60f63196",
+      "path": "assets/app-data/story/side/entries_16",
+      "sha256": "08edd9d8eeafad13089309d95eed406e9cd18da8d28fff8ba4b956792c1b3a4a",
+      "size": 2076
+    },
+    {
+      "compressed_size": 282,
+      "crc32": "877288fe",
+      "path": "assets/app-data/story/side/entries_17",
+      "sha256": "985b58c035cd65a4b7d16dd105ae005df9515cbedbb67def6533505797c779ad",
+      "size": 1375
+    },
+    {
+      "compressed_size": 377,
+      "crc32": "a3a2ed05",
+      "path": "assets/app-data/story/side/entries_18",
+      "sha256": "746e91d99d260491a01edc6aecc5164f1541d6a10c6d33ba163ca41f890b8749",
+      "size": 2386
+    },
+    {
+      "compressed_size": 300,
+      "crc32": "33e9d09a",
+      "path": "assets/app-data/story/side/entries_21",
+      "sha256": "c4416db67d1e7e8edb85a75850171178f3a78ab4e38b06eaf088b915ae8e1d30",
+      "size": 1282
+    },
+    {
+      "compressed_size": 365,
+      "crc32": "5a47d890",
+      "path": "assets/app-data/story/side/entries_22",
+      "sha256": "5f239610e5f1db85e23c63c55f074411272671866f5eb77f7234943693cccd15",
+      "size": 1901
+    },
+    {
+      "compressed_size": 499,
+      "crc32": "18a5c536",
+      "path": "assets/app-data/story/side/entries_3",
+      "sha256": "15e9b3872a97be02012b62f10c1a9129e217397ceaf2aa8d6752b76ee154733f",
+      "size": 4717
+    },
+    {
+      "compressed_size": 304,
+      "crc32": "d33766fc",
+      "path": "assets/app-data/story/side/entries_4",
+      "sha256": "f6212166d4f2e1b23e8fd34a07490eb8616cfb2b9ff7afd6b9522ff31a83bcae",
+      "size": 1946
+    },
+    {
+      "compressed_size": 359,
+      "crc32": "71d797a4",
+      "path": "assets/app-data/story/side/entries_5",
+      "sha256": "84d9a043190978b2413bc6235522bfb94bacfb1d80f1139b3af9e972a39a4550",
+      "size": 2237
+    },
+    {
+      "compressed_size": 188,
+      "crc32": "91ef5c97",
+      "path": "assets/app-data/story/side/entries_6",
+      "sha256": "8c2110d9f20e6e9abbf1583f546bf1085be23b6225f034abf5c79a2b4ac62756",
+      "size": 667
+    },
+    {
+      "compressed_size": 261,
+      "crc32": "66d2c032",
+      "path": "assets/app-data/story/side/entries_7",
+      "sha256": "b014dae3cd5a5cea36f21419af52acb7594badf199398c46aee3f8e2d03f5865",
+      "size": 1327
+    },
+    {
+      "compressed_size": 335,
+      "crc32": "05acd415",
+      "path": "assets/app-data/story/side/entries_8",
+      "sha256": "074fc78441c85a08d2fe1e484f3f887427f9ff7a39b4b2b49995504347ef4588",
+      "size": 2676
+    },
+    {
+      "compressed_size": 283,
+      "crc32": "c58ce0aa",
+      "path": "assets/app-data/story/side/entries_9",
+      "sha256": "37c2a4ded073c67afbd60c13a52f85f69ebd41d538ea2b861cf118c0bd8637d0",
+      "size": 1387
+    },
+    {
+      "compressed_size": 317,
+      "crc32": "1df202af",
+      "path": "assets/app-data/story/side/entries_99",
+      "sha256": "0177db2506bcc5279eba66ac57f17611dcad3e4b9af0d7729a3898dfa31cad5e",
+      "size": 2203
+    },
+    {
+      "compressed_size": 9136,
+      "crc32": "e5df42a6",
+      "path": "assets/char/characters.json",
+      "sha256": "a7e130503ea8c29027863f3e90aa8347b65b8cd66f65792382766f5d6dc08010",
+      "size": 64364
+    },
+    {
+      "compressed_size": 33096,
+      "crc32": "642acb15",
+      "path": "assets/songs/packlist",
+      "sha256": "f63592697b5325b5084e2b1f8d0829ce67ad8570b0b458fb164796c307b608b6",
+      "size": 89843
+    },
+    {
+      "compressed_size": 105813,
+      "crc32": "f0d1e55f",
+      "path": "assets/songs/songlist",
+      "sha256": "d0fa964e32d16ca486255d123880e200bb01504cdb26c78c729de9ae0120ba86",
+      "size": 1096227
+    },
+    {
+      "compressed_size": 7909,
+      "crc32": "e650d977",
+      "path": "assets/songs/unlocks",
+      "sha256": "18215553fd85230359951a1cd62d2b8b67190fd22d9f6c031244e03668bd13e0",
+      "size": 149699
+    },
+    {
+      "compressed_size": 644,
+      "crc32": "dc7e4f47",
+      "path": "assets/startup/missions.json",
+      "sha256": "eddb377c86b69260f8d024f216932354dd943b2c3e82bb1a5831ddb7978bcee6",
+      "size": 5458
+    },
+    {
+      "compressed_size": 55605,
+      "crc32": "932f03a1",
+      "path": "assets/tl/zh-Hans.mo",
+      "sha256": "950def131e48157b428a570d9805a7c6e1007b541909ddc49a432bb55dd75ee5",
+      "size": 131446
+    }
+  ]
+}

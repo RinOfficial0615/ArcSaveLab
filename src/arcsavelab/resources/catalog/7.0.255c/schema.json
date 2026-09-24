@@ -1,0 +1,5011 @@
+{
+  "chart": {
+    "fields": {
+      "artist": {
+        "present": 6,
+        "types": {
+          "str": 6
+        }
+      },
+      "audioOverride": {
+        "present": 8,
+        "types": {
+          "bool": 8
+        }
+      },
+      "bg": {
+        "present": 14,
+        "types": {
+          "str": 14
+        }
+      },
+      "bg_inverse": {
+        "present": 9,
+        "types": {
+          "str": 9
+        }
+      },
+      "bpm": {
+        "present": 4,
+        "types": {
+          "str": 4
+        }
+      },
+      "bpm_base": {
+        "present": 4,
+        "types": {
+          "int": 4
+        }
+      },
+      "chartDesigner": {
+        "present": 1833,
+        "types": {
+          "str": 1833
+        }
+      },
+      "date": {
+        "present": 50,
+        "types": {
+          "int": 50
+        }
+      },
+      "hidden_until": {
+        "present": 68,
+        "types": {
+          "str": 68
+        }
+      },
+      "hidden_until_unlocked": {
+        "present": 38,
+        "types": {
+          "bool": 38
+        }
+      },
+      "jacketDesigner": {
+        "present": 1833,
+        "types": {
+          "str": 1833
+        }
+      },
+      "jacketOverride": {
+        "present": 58,
+        "types": {
+          "bool": 58
+        }
+      },
+      "jacket_night": {
+        "present": 3,
+        "types": {
+          "str": 3
+        }
+      },
+      "legacy11": {
+        "present": 27,
+        "types": {
+          "bool": 27
+        }
+      },
+      "plusFingers": {
+        "present": 6,
+        "types": {
+          "bool": 6
+        }
+      },
+      "rating": {
+        "present": 1833,
+        "types": {
+          "int": 1833
+        }
+      },
+      "ratingClass": {
+        "present": 1833,
+        "types": {
+          "int": 1833
+        }
+      },
+      "ratingClassAlias": {
+        "present": 4,
+        "types": {
+          "int": 4
+        }
+      },
+      "ratingPlus": {
+        "present": 388,
+        "types": {
+          "bool": 388
+        }
+      },
+      "title_localized": {
+        "present": 8,
+        "types": {
+          "dict": 8
+        }
+      },
+      "version": {
+        "present": 50,
+        "types": {
+          "str": 50
+        }
+      },
+      "world_unlock": {
+        "present": 7,
+        "types": {
+          "bool": 7
+        }
+      }
+    },
+    "fingerprint_sha256": "df41eddf443cc8f2cb43736518ec0b53e7555105a38e8719c7775bfcb29ac9cc",
+    "keysets": [
+      {
+        "count": 2,
+        "fields": [
+          "artist",
+          "audioOverride",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "chartDesigner",
+          "date",
+          "jacketDesigner",
+          "jacketOverride",
+          "rating",
+          "ratingClass",
+          "title_localized",
+          "version"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "artist",
+          "audioOverride",
+          "bg",
+          "bg_inverse",
+          "chartDesigner",
+          "date",
+          "jacketDesigner",
+          "jacketOverride",
+          "rating",
+          "ratingClass",
+          "ratingPlus",
+          "title_localized",
+          "version"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "artist",
+          "audioOverride",
+          "bg",
+          "bg_inverse",
+          "chartDesigner",
+          "date",
+          "jacketDesigner",
+          "jacketOverride",
+          "rating",
+          "ratingClass",
+          "title_localized",
+          "version"
+        ]
+      },
+      {
+        "count": 2,
+        "fields": [
+          "artist",
+          "audioOverride",
+          "bg",
+          "bpm",
+          "bpm_base",
+          "chartDesigner",
+          "date",
+          "hidden_until",
+          "jacketDesigner",
+          "jacketOverride",
+          "legacy11",
+          "rating",
+          "ratingClass",
+          "title_localized",
+          "version"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "audioOverride",
+          "bg",
+          "chartDesigner",
+          "date",
+          "hidden_until",
+          "jacketDesigner",
+          "jacketOverride",
+          "legacy11",
+          "rating",
+          "ratingClass",
+          "title_localized",
+          "version"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "audioOverride",
+          "chartDesigner",
+          "hidden_until",
+          "hidden_until_unlocked",
+          "jacketDesigner",
+          "jacketOverride",
+          "rating",
+          "ratingClass",
+          "title_localized",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 2,
+        "fields": [
+          "bg",
+          "bg_inverse",
+          "chartDesigner",
+          "date",
+          "hidden_until",
+          "jacketDesigner",
+          "rating",
+          "ratingClass",
+          "ratingPlus",
+          "version"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "bg",
+          "bg_inverse",
+          "chartDesigner",
+          "date",
+          "hidden_until",
+          "jacketDesigner",
+          "rating",
+          "ratingClass",
+          "version"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "bg",
+          "bg_inverse",
+          "chartDesigner",
+          "date",
+          "jacketDesigner",
+          "jacketOverride",
+          "rating",
+          "ratingClass",
+          "ratingPlus",
+          "version"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "bg",
+          "bg_inverse",
+          "chartDesigner",
+          "date",
+          "jacketDesigner",
+          "jacketOverride",
+          "rating",
+          "ratingClass",
+          "version"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "bg",
+          "chartDesigner",
+          "date",
+          "hidden_until",
+          "jacketDesigner",
+          "jacketOverride",
+          "rating",
+          "ratingClass",
+          "ratingPlus",
+          "version"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "bg",
+          "chartDesigner",
+          "jacketDesigner",
+          "rating",
+          "ratingClass"
+        ]
+      },
+      {
+        "count": 3,
+        "fields": [
+          "chartDesigner",
+          "date",
+          "hidden_until",
+          "jacketDesigner",
+          "jacketOverride",
+          "rating",
+          "ratingClass",
+          "ratingPlus",
+          "version"
+        ]
+      },
+      {
+        "count": 2,
+        "fields": [
+          "chartDesigner",
+          "date",
+          "hidden_until",
+          "jacketDesigner",
+          "jacketOverride",
+          "rating",
+          "ratingClass",
+          "version"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "chartDesigner",
+          "date",
+          "hidden_until",
+          "jacketDesigner",
+          "rating",
+          "ratingClass",
+          "version"
+        ]
+      },
+      {
+        "count": 10,
+        "fields": [
+          "chartDesigner",
+          "date",
+          "jacketDesigner",
+          "jacketOverride",
+          "rating",
+          "ratingClass",
+          "ratingPlus",
+          "version"
+        ]
+      },
+      {
+        "count": 15,
+        "fields": [
+          "chartDesigner",
+          "date",
+          "jacketDesigner",
+          "jacketOverride",
+          "rating",
+          "ratingClass",
+          "version"
+        ]
+      },
+      {
+        "count": 3,
+        "fields": [
+          "chartDesigner",
+          "date",
+          "jacketDesigner",
+          "rating",
+          "ratingClass",
+          "ratingPlus",
+          "version"
+        ]
+      },
+      {
+        "count": 3,
+        "fields": [
+          "chartDesigner",
+          "date",
+          "jacketDesigner",
+          "rating",
+          "ratingClass",
+          "version"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "chartDesigner",
+          "hidden_until",
+          "hidden_until_unlocked",
+          "jacketDesigner",
+          "jacketOverride",
+          "legacy11",
+          "rating",
+          "ratingClass"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "chartDesigner",
+          "hidden_until",
+          "hidden_until_unlocked",
+          "jacketDesigner",
+          "legacy11",
+          "rating",
+          "ratingClass",
+          "ratingClassAlias"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "chartDesigner",
+          "hidden_until",
+          "hidden_until_unlocked",
+          "jacketDesigner",
+          "legacy11",
+          "rating",
+          "ratingClass",
+          "ratingPlus"
+        ]
+      },
+      {
+        "count": 24,
+        "fields": [
+          "chartDesigner",
+          "hidden_until",
+          "hidden_until_unlocked",
+          "jacketDesigner",
+          "rating",
+          "ratingClass"
+        ]
+      },
+      {
+        "count": 9,
+        "fields": [
+          "chartDesigner",
+          "hidden_until",
+          "hidden_until_unlocked",
+          "jacketDesigner",
+          "rating",
+          "ratingClass",
+          "ratingPlus"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "chartDesigner",
+          "hidden_until",
+          "hidden_until_unlocked",
+          "jacketDesigner",
+          "rating",
+          "ratingClass",
+          "ratingPlus",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "chartDesigner",
+          "hidden_until",
+          "jacketDesigner",
+          "legacy11",
+          "rating",
+          "ratingClass"
+        ]
+      },
+      {
+        "count": 2,
+        "fields": [
+          "chartDesigner",
+          "hidden_until",
+          "jacketDesigner",
+          "legacy11",
+          "rating",
+          "ratingClass",
+          "ratingClassAlias"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "chartDesigner",
+          "hidden_until",
+          "jacketDesigner",
+          "legacy11",
+          "rating",
+          "ratingClass",
+          "ratingClassAlias",
+          "ratingPlus"
+        ]
+      },
+      {
+        "count": 4,
+        "fields": [
+          "chartDesigner",
+          "hidden_until",
+          "jacketDesigner",
+          "legacy11",
+          "rating",
+          "ratingClass",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 4,
+        "fields": [
+          "chartDesigner",
+          "hidden_until",
+          "jacketDesigner",
+          "rating",
+          "ratingClass"
+        ]
+      },
+      {
+        "count": 4,
+        "fields": [
+          "chartDesigner",
+          "hidden_until",
+          "jacketDesigner",
+          "rating",
+          "ratingClass",
+          "ratingPlus"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "chartDesigner",
+          "hidden_until",
+          "jacketDesigner",
+          "rating",
+          "ratingClass",
+          "ratingPlus",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 15,
+        "fields": [
+          "chartDesigner",
+          "jacketDesigner",
+          "jacketOverride",
+          "rating",
+          "ratingClass"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "chartDesigner",
+          "jacketDesigner",
+          "jacketOverride",
+          "rating",
+          "ratingClass",
+          "ratingPlus"
+        ]
+      },
+      {
+        "count": 3,
+        "fields": [
+          "chartDesigner",
+          "jacketDesigner",
+          "jacket_night",
+          "rating",
+          "ratingClass"
+        ]
+      },
+      {
+        "count": 2,
+        "fields": [
+          "chartDesigner",
+          "jacketDesigner",
+          "legacy11",
+          "plusFingers",
+          "rating",
+          "ratingClass"
+        ]
+      },
+      {
+        "count": 11,
+        "fields": [
+          "chartDesigner",
+          "jacketDesigner",
+          "legacy11",
+          "rating",
+          "ratingClass"
+        ]
+      },
+      {
+        "count": 4,
+        "fields": [
+          "chartDesigner",
+          "jacketDesigner",
+          "plusFingers",
+          "rating",
+          "ratingClass"
+        ]
+      },
+      {
+        "count": 1342,
+        "fields": [
+          "chartDesigner",
+          "jacketDesigner",
+          "rating",
+          "ratingClass"
+        ]
+      },
+      {
+        "count": 349,
+        "fields": [
+          "chartDesigner",
+          "jacketDesigner",
+          "rating",
+          "ratingClass",
+          "ratingPlus"
+        ]
+      }
+    ],
+    "record_count": 1833
+  },
+  "fingerprint_sha256": "9655f924c4e34ddd3b4317005a866521f04285ed28138438933573992346c06e",
+  "mission": {
+    "fields": {
+      "id": {
+        "present": 28,
+        "types": {
+          "str": 28
+        }
+      },
+      "missionsToClearTier": {
+        "present": 5,
+        "types": {
+          "int": 5
+        }
+      },
+      "requirements": {
+        "present": 28,
+        "types": {
+          "list": 28
+        }
+      },
+      "reward_bundles": {
+        "present": 28,
+        "types": {
+          "list": 28
+        }
+      },
+      "tier": {
+        "present": 28,
+        "types": {
+          "int": 28
+        }
+      }
+    },
+    "fingerprint_sha256": "7092c53c8c90e1699feb639a9d2a0678a316ff6805b489590c132710139f17eb",
+    "keysets": [
+      {
+        "count": 5,
+        "fields": [
+          "id",
+          "missionsToClearTier",
+          "requirements",
+          "reward_bundles",
+          "tier"
+        ]
+      },
+      {
+        "count": 23,
+        "fields": [
+          "id",
+          "requirements",
+          "reward_bundles",
+          "tier"
+        ]
+      }
+    ],
+    "record_count": 28
+  },
+  "mission_requirement": {
+    "fields": {
+      "id": {
+        "present": 23,
+        "types": {
+          "str": 23
+        }
+      },
+      "type": {
+        "present": 36,
+        "types": {
+          "str": 36
+        }
+      },
+      "value": {
+        "present": 1,
+        "types": {
+          "int": 1
+        }
+      }
+    },
+    "fingerprint_sha256": "d1d553e8955442f21e03cb406be40e040e74ae71496ad2b310bb167b2cd660b2",
+    "keysets": [
+      {
+        "count": 23,
+        "fields": [
+          "id",
+          "type"
+        ]
+      },
+      {
+        "count": 12,
+        "fields": [
+          "type"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "type",
+          "value"
+        ]
+      }
+    ],
+    "record_count": 36
+  },
+  "pack": {
+    "fields": {
+      "coming_soon": {
+        "present": 2,
+        "types": {
+          "bool": 2
+        }
+      },
+      "custom_banner": {
+        "present": 29,
+        "types": {
+          "bool": 29
+        }
+      },
+      "cutout_pack_image": {
+        "present": 2,
+        "types": {
+          "bool": 2
+        }
+      },
+      "description_localized": {
+        "present": 62,
+        "types": {
+          "dict": 62
+        }
+      },
+      "id": {
+        "present": 62,
+        "types": {
+          "str": 62
+        }
+      },
+      "is_active_extend_pack": {
+        "present": 4,
+        "types": {
+          "bool": 4
+        }
+      },
+      "is_extend_pack": {
+        "present": 4,
+        "types": {
+          "bool": 4
+        }
+      },
+      "limitedSaleEndTime": {
+        "present": 3,
+        "types": {
+          "int": 3
+        }
+      },
+      "name_localized": {
+        "present": 62,
+        "types": {
+          "dict": 62
+        }
+      },
+      "pack_parent": {
+        "present": 21,
+        "types": {
+          "str": 21
+        }
+      },
+      "plus_character": {
+        "present": 62,
+        "types": {
+          "int": 62
+        }
+      },
+      "section": {
+        "present": 62,
+        "types": {
+          "str": 62
+        }
+      },
+      "small_pack_image": {
+        "present": 3,
+        "types": {
+          "bool": 3
+        }
+      }
+    },
+    "fingerprint_sha256": "238d84776abdbaf2df7aca1d8b9ddd664add932e18878c3dd6459c4f5744b1c5",
+    "keysets": [
+      {
+        "count": 2,
+        "fields": [
+          "coming_soon",
+          "custom_banner",
+          "description_localized",
+          "id",
+          "name_localized",
+          "plus_character",
+          "section"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "custom_banner",
+          "cutout_pack_image",
+          "description_localized",
+          "id",
+          "is_active_extend_pack",
+          "is_extend_pack",
+          "name_localized",
+          "plus_character",
+          "section"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "custom_banner",
+          "cutout_pack_image",
+          "description_localized",
+          "id",
+          "name_localized",
+          "plus_character",
+          "section"
+        ]
+      },
+      {
+        "count": 3,
+        "fields": [
+          "custom_banner",
+          "description_localized",
+          "id",
+          "is_active_extend_pack",
+          "is_extend_pack",
+          "name_localized",
+          "plus_character",
+          "section",
+          "small_pack_image"
+        ]
+      },
+      {
+        "count": 2,
+        "fields": [
+          "custom_banner",
+          "description_localized",
+          "id",
+          "limitedSaleEndTime",
+          "name_localized",
+          "plus_character",
+          "section"
+        ]
+      },
+      {
+        "count": 20,
+        "fields": [
+          "custom_banner",
+          "description_localized",
+          "id",
+          "name_localized",
+          "plus_character",
+          "section"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "description_localized",
+          "id",
+          "limitedSaleEndTime",
+          "name_localized",
+          "pack_parent",
+          "plus_character",
+          "section"
+        ]
+      },
+      {
+        "count": 20,
+        "fields": [
+          "description_localized",
+          "id",
+          "name_localized",
+          "pack_parent",
+          "plus_character",
+          "section"
+        ]
+      },
+      {
+        "count": 12,
+        "fields": [
+          "description_localized",
+          "id",
+          "name_localized",
+          "plus_character",
+          "section"
+        ]
+      }
+    ],
+    "record_count": 62
+  },
+  "partner": {
+    "fields": {
+      "base_character": {
+        "present": 85,
+        "types": {
+          "bool": 85
+        }
+      },
+      "base_character_id": {
+        "present": 27,
+        "types": {
+          "int": 27
+        }
+      },
+      "base_frag": {
+        "present": 100,
+        "types": {
+          "float": 35,
+          "int": 65
+        }
+      },
+      "base_over": {
+        "present": 100,
+        "types": {
+          "float": 41,
+          "int": 59
+        }
+      },
+      "base_prog": {
+        "present": 100,
+        "types": {
+          "float": 32,
+          "int": 68
+        }
+      },
+      "char_type": {
+        "present": 100,
+        "types": {
+          "int": 100
+        }
+      },
+      "character_id": {
+        "present": 100,
+        "types": {
+          "int": 100
+        }
+      },
+      "is_available": {
+        "present": 100,
+        "types": {
+          "bool": 100
+        }
+      },
+      "is_previewable": {
+        "present": 100,
+        "types": {
+          "bool": 100
+        }
+      },
+      "is_tairitsu": {
+        "present": 1,
+        "types": {
+          "bool": 1
+        }
+      },
+      "max_frag": {
+        "present": 100,
+        "types": {
+          "float": 23,
+          "int": 77
+        }
+      },
+      "max_over": {
+        "present": 100,
+        "types": {
+          "float": 23,
+          "int": 77
+        }
+      },
+      "max_prog": {
+        "present": 100,
+        "types": {
+          "float": 17,
+          "int": 83
+        }
+      },
+      "name": {
+        "present": 100,
+        "types": {
+          "str": 100
+        }
+      },
+      "pack_id": {
+        "present": 65,
+        "types": {
+          "str": 65
+        }
+      },
+      "search_strings": {
+        "present": 100,
+        "types": {
+          "list": 100
+        }
+      },
+      "skill_id": {
+        "present": 100,
+        "types": {
+          "str": 100
+        }
+      },
+      "skill_id_uncap": {
+        "present": 13,
+        "types": {
+          "str": 13
+        }
+      },
+      "skill_requires_uncap": {
+        "present": 1,
+        "types": {
+          "bool": 1
+        }
+      },
+      "skill_unlock_level": {
+        "present": 100,
+        "types": {
+          "int": 100
+        }
+      },
+      "uncap_cores": {
+        "present": 100,
+        "types": {
+          "list": 100
+        }
+      },
+      "uncap_frag_growth": {
+        "present": 3,
+        "types": {
+          "int": 3
+        }
+      },
+      "uncap_over_growth": {
+        "present": 1,
+        "types": {
+          "int": 1
+        }
+      },
+      "uncap_prog_growth": {
+        "present": 1,
+        "types": {
+          "float": 1
+        }
+      },
+      "uncap_version_from": {
+        "present": 27,
+        "types": {
+          "str": 27
+        }
+      },
+      "uncap_visible_req": {
+        "present": 1,
+        "types": {
+          "str": 1
+        }
+      },
+      "version_from": {
+        "present": 100,
+        "types": {
+          "str": 100
+        }
+      },
+      "voice": {
+        "present": 2,
+        "types": {
+          "list": 2
+        }
+      }
+    },
+    "fingerprint_sha256": "11d64ff32e0471ba3b433bbba42e756a097742af6a634eb86aaaa75d2875e507",
+    "keysets": [
+      {
+        "count": 1,
+        "fields": [
+          "base_character",
+          "base_character_id",
+          "base_frag",
+          "base_over",
+          "base_prog",
+          "char_type",
+          "character_id",
+          "is_available",
+          "is_previewable",
+          "is_tairitsu",
+          "max_frag",
+          "max_over",
+          "max_prog",
+          "name",
+          "search_strings",
+          "skill_id",
+          "skill_unlock_level",
+          "uncap_cores",
+          "version_from"
+        ]
+      },
+      {
+        "count": 11,
+        "fields": [
+          "base_character",
+          "base_character_id",
+          "base_frag",
+          "base_over",
+          "base_prog",
+          "char_type",
+          "character_id",
+          "is_available",
+          "is_previewable",
+          "max_frag",
+          "max_over",
+          "max_prog",
+          "name",
+          "pack_id",
+          "search_strings",
+          "skill_id",
+          "skill_unlock_level",
+          "uncap_cores",
+          "version_from"
+        ]
+      },
+      {
+        "count": 15,
+        "fields": [
+          "base_character",
+          "base_character_id",
+          "base_frag",
+          "base_over",
+          "base_prog",
+          "char_type",
+          "character_id",
+          "is_available",
+          "is_previewable",
+          "max_frag",
+          "max_over",
+          "max_prog",
+          "name",
+          "search_strings",
+          "skill_id",
+          "skill_unlock_level",
+          "uncap_cores",
+          "version_from"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "base_character",
+          "base_frag",
+          "base_over",
+          "base_prog",
+          "char_type",
+          "character_id",
+          "is_available",
+          "is_previewable",
+          "max_frag",
+          "max_over",
+          "max_prog",
+          "name",
+          "pack_id",
+          "search_strings",
+          "skill_id",
+          "skill_id_uncap",
+          "skill_unlock_level",
+          "uncap_cores",
+          "uncap_version_from",
+          "uncap_visible_req",
+          "version_from"
+        ]
+      },
+      {
+        "count": 7,
+        "fields": [
+          "base_character",
+          "base_frag",
+          "base_over",
+          "base_prog",
+          "char_type",
+          "character_id",
+          "is_available",
+          "is_previewable",
+          "max_frag",
+          "max_over",
+          "max_prog",
+          "name",
+          "pack_id",
+          "search_strings",
+          "skill_id",
+          "skill_id_uncap",
+          "skill_unlock_level",
+          "uncap_cores",
+          "uncap_version_from",
+          "version_from"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "base_character",
+          "base_frag",
+          "base_over",
+          "base_prog",
+          "char_type",
+          "character_id",
+          "is_available",
+          "is_previewable",
+          "max_frag",
+          "max_over",
+          "max_prog",
+          "name",
+          "pack_id",
+          "search_strings",
+          "skill_id",
+          "skill_id_uncap",
+          "skill_unlock_level",
+          "uncap_cores",
+          "uncap_version_from",
+          "version_from",
+          "voice"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "base_character",
+          "base_frag",
+          "base_over",
+          "base_prog",
+          "char_type",
+          "character_id",
+          "is_available",
+          "is_previewable",
+          "max_frag",
+          "max_over",
+          "max_prog",
+          "name",
+          "pack_id",
+          "search_strings",
+          "skill_id",
+          "skill_requires_uncap",
+          "skill_unlock_level",
+          "uncap_cores",
+          "uncap_version_from",
+          "version_from"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "base_character",
+          "base_frag",
+          "base_over",
+          "base_prog",
+          "char_type",
+          "character_id",
+          "is_available",
+          "is_previewable",
+          "max_frag",
+          "max_over",
+          "max_prog",
+          "name",
+          "pack_id",
+          "search_strings",
+          "skill_id",
+          "skill_unlock_level",
+          "uncap_cores",
+          "uncap_frag_growth",
+          "uncap_version_from",
+          "version_from"
+        ]
+      },
+      {
+        "count": 9,
+        "fields": [
+          "base_character",
+          "base_frag",
+          "base_over",
+          "base_prog",
+          "char_type",
+          "character_id",
+          "is_available",
+          "is_previewable",
+          "max_frag",
+          "max_over",
+          "max_prog",
+          "name",
+          "pack_id",
+          "search_strings",
+          "skill_id",
+          "skill_unlock_level",
+          "uncap_cores",
+          "uncap_version_from",
+          "version_from"
+        ]
+      },
+      {
+        "count": 20,
+        "fields": [
+          "base_character",
+          "base_frag",
+          "base_over",
+          "base_prog",
+          "char_type",
+          "character_id",
+          "is_available",
+          "is_previewable",
+          "max_frag",
+          "max_over",
+          "max_prog",
+          "name",
+          "pack_id",
+          "search_strings",
+          "skill_id",
+          "skill_unlock_level",
+          "uncap_cores",
+          "version_from"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "base_character",
+          "base_frag",
+          "base_over",
+          "base_prog",
+          "char_type",
+          "character_id",
+          "is_available",
+          "is_previewable",
+          "max_frag",
+          "max_over",
+          "max_prog",
+          "name",
+          "search_strings",
+          "skill_id",
+          "skill_id_uncap",
+          "skill_unlock_level",
+          "uncap_cores",
+          "uncap_frag_growth",
+          "uncap_over_growth",
+          "uncap_prog_growth",
+          "uncap_version_from",
+          "version_from"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "base_character",
+          "base_frag",
+          "base_over",
+          "base_prog",
+          "char_type",
+          "character_id",
+          "is_available",
+          "is_previewable",
+          "max_frag",
+          "max_over",
+          "max_prog",
+          "name",
+          "search_strings",
+          "skill_id",
+          "skill_id_uncap",
+          "skill_unlock_level",
+          "uncap_cores",
+          "uncap_frag_growth",
+          "uncap_version_from",
+          "version_from"
+        ]
+      },
+      {
+        "count": 2,
+        "fields": [
+          "base_character",
+          "base_frag",
+          "base_over",
+          "base_prog",
+          "char_type",
+          "character_id",
+          "is_available",
+          "is_previewable",
+          "max_frag",
+          "max_over",
+          "max_prog",
+          "name",
+          "search_strings",
+          "skill_id",
+          "skill_id_uncap",
+          "skill_unlock_level",
+          "uncap_cores",
+          "uncap_version_from",
+          "version_from"
+        ]
+      },
+      {
+        "count": 3,
+        "fields": [
+          "base_character",
+          "base_frag",
+          "base_over",
+          "base_prog",
+          "char_type",
+          "character_id",
+          "is_available",
+          "is_previewable",
+          "max_frag",
+          "max_over",
+          "max_prog",
+          "name",
+          "search_strings",
+          "skill_id",
+          "skill_unlock_level",
+          "uncap_cores",
+          "uncap_version_from",
+          "version_from"
+        ]
+      },
+      {
+        "count": 10,
+        "fields": [
+          "base_character",
+          "base_frag",
+          "base_over",
+          "base_prog",
+          "char_type",
+          "character_id",
+          "is_available",
+          "is_previewable",
+          "max_frag",
+          "max_over",
+          "max_prog",
+          "name",
+          "search_strings",
+          "skill_id",
+          "skill_unlock_level",
+          "uncap_cores",
+          "version_from"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "base_character",
+          "base_frag",
+          "base_over",
+          "base_prog",
+          "char_type",
+          "character_id",
+          "is_available",
+          "is_previewable",
+          "max_frag",
+          "max_over",
+          "max_prog",
+          "name",
+          "search_strings",
+          "skill_id",
+          "skill_unlock_level",
+          "uncap_cores",
+          "version_from",
+          "voice"
+        ]
+      },
+      {
+        "count": 14,
+        "fields": [
+          "base_frag",
+          "base_over",
+          "base_prog",
+          "char_type",
+          "character_id",
+          "is_available",
+          "is_previewable",
+          "max_frag",
+          "max_over",
+          "max_prog",
+          "name",
+          "pack_id",
+          "search_strings",
+          "skill_id",
+          "skill_unlock_level",
+          "uncap_cores",
+          "version_from"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "base_frag",
+          "base_over",
+          "base_prog",
+          "char_type",
+          "character_id",
+          "is_available",
+          "is_previewable",
+          "max_frag",
+          "max_over",
+          "max_prog",
+          "name",
+          "search_strings",
+          "skill_id",
+          "skill_unlock_level",
+          "uncap_cores",
+          "version_from"
+        ]
+      }
+    ],
+    "record_count": 100
+  },
+  "song": {
+    "fields": {
+      "additional_files": {
+        "present": 11,
+        "types": {
+          "list": 11
+        }
+      },
+      "artist": {
+        "present": 552,
+        "types": {
+          "str": 552
+        }
+      },
+      "audioPreview": {
+        "present": 552,
+        "types": {
+          "int": 552
+        }
+      },
+      "audioPreviewEnd": {
+        "present": 552,
+        "types": {
+          "int": 552
+        }
+      },
+      "bg": {
+        "present": 552,
+        "types": {
+          "str": 552
+        }
+      },
+      "bg_daynight": {
+        "present": 8,
+        "types": {
+          "dict": 8
+        }
+      },
+      "bg_inverse": {
+        "present": 463,
+        "types": {
+          "str": 463
+        }
+      },
+      "bpm": {
+        "present": 552,
+        "types": {
+          "str": 552
+        }
+      },
+      "bpm_base": {
+        "present": 552,
+        "types": {
+          "float": 4,
+          "int": 548
+        }
+      },
+      "byd_local_unlock": {
+        "present": 18,
+        "types": {
+          "bool": 18
+        }
+      },
+      "category": {
+        "present": 134,
+        "types": {
+          "str": 134
+        }
+      },
+      "date": {
+        "present": 552,
+        "types": {
+          "int": 552
+        }
+      },
+      "deleted": {
+        "present": 1,
+        "types": {
+          "bool": 1
+        }
+      },
+      "difficulties": {
+        "present": 552,
+        "types": {
+          "list": 552
+        }
+      },
+      "id": {
+        "present": 553,
+        "types": {
+          "str": 553
+        }
+      },
+      "idx": {
+        "present": 553,
+        "types": {
+          "int": 553
+        }
+      },
+      "jacket_localized": {
+        "present": 1,
+        "types": {
+          "dict": 1
+        }
+      },
+      "limitedSaleEndTime": {
+        "present": 1,
+        "types": {
+          "int": 1
+        }
+      },
+      "no_stream": {
+        "present": 56,
+        "types": {
+          "bool": 56
+        }
+      },
+      "purchase": {
+        "present": 552,
+        "types": {
+          "str": 552
+        }
+      },
+      "remote_dl": {
+        "present": 536,
+        "types": {
+          "bool": 536
+        }
+      },
+      "search_artist": {
+        "present": 551,
+        "types": {
+          "dict": 551
+        }
+      },
+      "search_title": {
+        "present": 550,
+        "types": {
+          "dict": 550
+        }
+      },
+      "set": {
+        "present": 552,
+        "types": {
+          "str": 552
+        }
+      },
+      "side": {
+        "present": 552,
+        "types": {
+          "int": 552
+        }
+      },
+      "songlist_hidden": {
+        "present": 1,
+        "types": {
+          "bool": 1
+        }
+      },
+      "source_copyright": {
+        "present": 140,
+        "types": {
+          "str": 140
+        }
+      },
+      "source_localized": {
+        "present": 127,
+        "types": {
+          "dict": 127
+        }
+      },
+      "title_localized": {
+        "present": 552,
+        "types": {
+          "dict": 552
+        }
+      },
+      "version": {
+        "present": 552,
+        "types": {
+          "str": 552
+        }
+      },
+      "world_unlock": {
+        "present": 476,
+        "types": {
+          "bool": 476
+        }
+      }
+    },
+    "fingerprint_sha256": "32b26c8c9154066fb7ab2dc3398a1cf1e01192e2f1c9351e95008ab365f6f125",
+    "keysets": [
+      {
+        "count": 3,
+        "fields": [
+          "additional_files",
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "byd_local_unlock",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 3,
+        "fields": [
+          "additional_files",
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "additional_files",
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bpm",
+          "bpm_base",
+          "byd_local_unlock",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "songlist_hidden",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 4,
+        "fields": [
+          "additional_files",
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bpm",
+          "bpm_base",
+          "byd_local_unlock",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 2,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_daynight",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "category",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 6,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_daynight",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "byd_local_unlock",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "source_localized",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 4,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "byd_local_unlock",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "category",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "limitedSaleEndTime",
+          "no_stream",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "source_localized",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "category",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "no_stream",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "source_copyright",
+          "source_localized",
+          "title_localized",
+          "version"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "category",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "no_stream",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 10,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "category",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "source_copyright",
+          "source_localized",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 7,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "category",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "source_copyright",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "category",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "source_localized",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 10,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "category",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "title_localized",
+          "version"
+        ]
+      },
+      {
+        "count": 86,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "category",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 7,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "no_stream",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "source_copyright",
+          "source_localized",
+          "title_localized",
+          "version"
+        ]
+      },
+      {
+        "count": 19,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "no_stream",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "source_copyright",
+          "source_localized",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 3,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "no_stream",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "source_copyright",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 6,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "no_stream",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "source_localized",
+          "title_localized",
+          "version"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "no_stream",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 46,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "source_copyright",
+          "source_localized",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 19,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "source_copyright",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 6,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "source_localized",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 22,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "title_localized",
+          "version"
+        ]
+      },
+      {
+        "count": 182,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "set",
+          "side",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "set",
+          "side",
+          "source_localized",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 14,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "title_localized",
+          "version"
+        ]
+      },
+      {
+        "count": 5,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bpm",
+          "bpm_base",
+          "byd_local_unlock",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 2,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bpm",
+          "bpm_base",
+          "category",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "no_stream",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "source_copyright",
+          "source_localized",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 3,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bpm",
+          "bpm_base",
+          "category",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "source_copyright",
+          "source_localized",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 4,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bpm",
+          "bpm_base",
+          "category",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "title_localized",
+          "version"
+        ]
+      },
+      {
+        "count": 6,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bpm",
+          "bpm_base",
+          "category",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bpm",
+          "bpm_base",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "jacket_localized",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 12,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bpm",
+          "bpm_base",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "no_stream",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "source_copyright",
+          "source_localized",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bpm",
+          "bpm_base",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "no_stream",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "source_copyright",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bpm",
+          "bpm_base",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "no_stream",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "source_localized",
+          "title_localized",
+          "version"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bpm",
+          "bpm_base",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "no_stream",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "title_localized",
+          "version"
+        ]
+      },
+      {
+        "count": 10,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bpm",
+          "bpm_base",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "source_copyright",
+          "source_localized",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 8,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bpm",
+          "bpm_base",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "title_localized",
+          "version"
+        ]
+      },
+      {
+        "count": 28,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bpm",
+          "bpm_base",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 2,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bpm",
+          "bpm_base",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "purchase",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "title_localized",
+          "version"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "deleted",
+          "id",
+          "idx"
+        ]
+      }
+    ],
+    "record_count": 553
+  },
+  "story_entry": {
+    "fields": {
+      "additionalRequires": {
+        "present": 2,
+        "types": {
+          "list": 2
+        }
+      },
+      "alternatePrefix": {
+        "present": 59,
+        "types": {
+          "str": 59
+        }
+      },
+      "alternateSuffix": {
+        "present": 23,
+        "types": {
+          "str": 23
+        }
+      },
+      "bgmOverride": {
+        "present": 6,
+        "types": {
+          "str": 6
+        }
+      },
+      "blockReadingUntilPrevRead": {
+        "present": 4,
+        "types": {
+          "bool": 4
+        }
+      },
+      "charIcon1": {
+        "present": 192,
+        "types": {
+          "int": 192
+        }
+      },
+      "charIcon2": {
+        "present": 179,
+        "types": {
+          "int": 179
+        }
+      },
+      "clearCharaId": {
+        "present": 181,
+        "types": {
+          "int": 181
+        }
+      },
+      "clearSongId": {
+        "present": 184,
+        "types": {
+          "str": 184
+        }
+      },
+      "hasAlternative": {
+        "present": 5,
+        "types": {
+          "bool": 5
+        }
+      },
+      "hiddenFromCount": {
+        "present": 10,
+        "types": {
+          "bool": 10
+        }
+      },
+      "icon": {
+        "present": 196,
+        "types": {
+          "str": 196
+        }
+      },
+      "mapId": {
+        "present": 1,
+        "types": {
+          "str": 1
+        }
+      },
+      "minor": {
+        "present": 196,
+        "types": {
+          "int": 196
+        }
+      },
+      "playableSongBgmId": {
+        "present": 7,
+        "types": {
+          "str": 7
+        }
+      },
+      "requiredMinor": {
+        "present": 160,
+        "types": {
+          "int": 160
+        }
+      },
+      "requiredPurchase": {
+        "present": 196,
+        "types": {
+          "str": 196
+        }
+      },
+      "requiredPurchaseAlternate": {
+        "present": 6,
+        "types": {
+          "str": 6
+        }
+      },
+      "requirementAnomalyId": {
+        "present": 2,
+        "types": {
+          "str": 2
+        }
+      },
+      "storyCgPath": {
+        "present": 50,
+        "types": {
+          "str": 50
+        }
+      },
+      "storyData": {
+        "present": 16,
+        "types": {
+          "str": 16
+        }
+      },
+      "storyType": {
+        "present": 196,
+        "types": {
+          "str": 196
+        }
+      },
+      "unlockedSongId": {
+        "present": 1,
+        "types": {
+          "str": 1
+        }
+      }
+    },
+    "fingerprint_sha256": "ff56c8a1e586b58b711991206e5da6982db610a2e6716b723ea4cef4dc98aa53",
+    "keysets": [
+      {
+        "count": 1,
+        "fields": [
+          "additionalRequires",
+          "alternatePrefix",
+          "alternateSuffix",
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "minor",
+          "requiredPurchase",
+          "storyData",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "additionalRequires",
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "hiddenFromCount",
+          "icon",
+          "minor",
+          "playableSongBgmId",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyCgPath",
+          "storyType"
+        ]
+      },
+      {
+        "count": 3,
+        "fields": [
+          "alternatePrefix",
+          "alternateSuffix",
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyData",
+          "storyType"
+        ]
+      },
+      {
+        "count": 9,
+        "fields": [
+          "alternatePrefix",
+          "alternateSuffix",
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyType"
+        ]
+      },
+      {
+        "count": 2,
+        "fields": [
+          "alternatePrefix",
+          "alternateSuffix",
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "minor",
+          "requiredPurchase",
+          "storyType"
+        ]
+      },
+      {
+        "count": 2,
+        "fields": [
+          "alternatePrefix",
+          "bgmOverride",
+          "charIcon1",
+          "clearCharaId",
+          "clearSongId",
+          "hiddenFromCount",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyCgPath",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "alternatePrefix",
+          "bgmOverride",
+          "charIcon1",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyCgPath",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "alternatePrefix",
+          "bgmOverride",
+          "charIcon1",
+          "hiddenFromCount",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyType"
+        ]
+      },
+      {
+        "count": 6,
+        "fields": [
+          "alternatePrefix",
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyCgPath",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "alternatePrefix",
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyData",
+          "storyType"
+        ]
+      },
+      {
+        "count": 11,
+        "fields": [
+          "alternatePrefix",
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "alternatePrefix",
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "minor",
+          "requiredPurchase",
+          "storyCgPath",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "alternatePrefix",
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "minor",
+          "requiredPurchase",
+          "storyData",
+          "storyType"
+        ]
+      },
+      {
+        "count": 2,
+        "fields": [
+          "alternatePrefix",
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "minor",
+          "requiredPurchase",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "alternatePrefix",
+          "charIcon1",
+          "charIcon2",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyCgPath",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "alternatePrefix",
+          "charIcon1",
+          "charIcon2",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyData",
+          "storyType",
+          "unlockedSongId"
+        ]
+      },
+      {
+        "count": 2,
+        "fields": [
+          "alternatePrefix",
+          "charIcon1",
+          "charIcon2",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "alternatePrefix",
+          "charIcon1",
+          "charIcon2",
+          "icon",
+          "minor",
+          "requiredPurchase",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "alternatePrefix",
+          "charIcon1",
+          "clearCharaId",
+          "clearSongId",
+          "hiddenFromCount",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyData",
+          "storyType"
+        ]
+      },
+      {
+        "count": 2,
+        "fields": [
+          "alternatePrefix",
+          "charIcon1",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyCgPath",
+          "storyType"
+        ]
+      },
+      {
+        "count": 3,
+        "fields": [
+          "alternatePrefix",
+          "charIcon1",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyData",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "alternatePrefix",
+          "charIcon1",
+          "hiddenFromCount",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "alternatePrefix",
+          "charIcon1",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyCgPath",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "alternatePrefix",
+          "charIcon1",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyData",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "alternatePrefix",
+          "clearSongId",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyCgPath",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "alternatePrefix",
+          "clearSongId",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "alternatePrefix",
+          "clearSongId",
+          "icon",
+          "minor",
+          "requiredPurchase",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "alternatePrefix",
+          "hiddenFromCount",
+          "icon",
+          "minor",
+          "requiredPurchase",
+          "storyData",
+          "storyType"
+        ]
+      },
+      {
+        "count": 3,
+        "fields": [
+          "alternateSuffix",
+          "blockReadingUntilPrevRead",
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "minor",
+          "playableSongBgmId",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyCgPath",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "alternateSuffix",
+          "blockReadingUntilPrevRead",
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "minor",
+          "playableSongBgmId",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "alternateSuffix",
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "hiddenFromCount",
+          "icon",
+          "minor",
+          "requiredPurchase",
+          "storyCgPath",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "alternateSuffix",
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "minor",
+          "playableSongBgmId",
+          "requiredPurchase",
+          "storyCgPath",
+          "storyType"
+        ]
+      },
+      {
+        "count": 2,
+        "fields": [
+          "alternateSuffix",
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyCgPath",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "bgmOverride",
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "hasAlternative",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyCgPath",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "bgmOverride",
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyCgPath",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "hasAlternative",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyCgPath",
+          "storyType"
+        ]
+      },
+      {
+        "count": 2,
+        "fields": [
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "hasAlternative",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "hasAlternative",
+          "icon",
+          "minor",
+          "requiredPurchase",
+          "storyCgPath",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "hiddenFromCount",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyCgPath",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "hiddenFromCount",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyData",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "mapId",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyCgPath",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "minor",
+          "playableSongBgmId",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyData",
+          "storyType"
+        ]
+      },
+      {
+        "count": 5,
+        "fields": [
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "requiredPurchaseAlternate",
+          "storyType"
+        ]
+      },
+      {
+        "count": 16,
+        "fields": [
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyCgPath",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyData",
+          "storyType"
+        ]
+      },
+      {
+        "count": 71,
+        "fields": [
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "storyType"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "minor",
+          "requiredPurchase",
+          "requiredPurchaseAlternate",
+          "storyType"
+        ]
+      },
+      {
+        "count": 5,
+        "fields": [
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "minor",
+          "requiredPurchase",
+          "storyCgPath",
+          "storyType"
+        ]
+      },
+      {
+        "count": 17,
+        "fields": [
+          "charIcon1",
+          "charIcon2",
+          "clearCharaId",
+          "clearSongId",
+          "icon",
+          "minor",
+          "requiredPurchase",
+          "storyType"
+        ]
+      },
+      {
+        "count": 2,
+        "fields": [
+          "charIcon1",
+          "charIcon2",
+          "icon",
+          "minor",
+          "requiredMinor",
+          "requiredPurchase",
+          "requirementAnomalyId",
+          "storyType"
+        ]
+      }
+    ],
+    "record_count": 196
+  },
+  "story_path": {
+    "fields": {
+      "act": {
+        "present": 29,
+        "types": {
+          "int": 29
+        }
+      },
+      "characterIcon": {
+        "present": 23,
+        "types": {
+          "int": 23
+        }
+      },
+      "characterIconXOffset": {
+        "present": 19,
+        "types": {
+          "int": 19
+        }
+      },
+      "main": {
+        "present": 29,
+        "types": {
+          "int": 29
+        }
+      },
+      "storyType": {
+        "present": 29,
+        "types": {
+          "int": 29
+        }
+      }
+    },
+    "fingerprint_sha256": "dfadd18ff7db12295e786a8873323e5568de473f9556cf60cc58e0591f66a949",
+    "keysets": [
+      {
+        "count": 19,
+        "fields": [
+          "act",
+          "characterIcon",
+          "characterIconXOffset",
+          "main",
+          "storyType"
+        ]
+      },
+      {
+        "count": 4,
+        "fields": [
+          "act",
+          "characterIcon",
+          "main",
+          "storyType"
+        ]
+      },
+      {
+        "count": 6,
+        "fields": [
+          "act",
+          "main",
+          "storyType"
+        ]
+      }
+    ],
+    "record_count": 29
+  },
+  "unlock": {
+    "fields": {
+      "conditions": {
+        "present": 471,
+        "types": {
+          "list": 471
+        }
+      },
+      "ratingClass": {
+        "present": 471,
+        "types": {
+          "int": 471
+        }
+      },
+      "songId": {
+        "present": 471,
+        "types": {
+          "str": 471
+        }
+      }
+    },
+    "fingerprint_sha256": "041388ea632f9a0af18e2f6aec109bcef69c1f93a4ca989edfe79f9d5998087c",
+    "keysets": [
+      {
+        "count": 471,
+        "fields": [
+          "conditions",
+          "ratingClass",
+          "songId"
+        ]
+      }
+    ],
+    "record_count": 471
+  },
+  "unlock_condition": {
+    "fields": {
+      "act": {
+        "present": 2,
+        "types": {
+          "int": 2
+        }
+      },
+      "awakened": {
+        "present": 1,
+        "types": {
+          "bool": 1
+        }
+      },
+      "char_id": {
+        "present": 1,
+        "types": {
+          "int": 1
+        }
+      },
+      "conditions": {
+        "present": 36,
+        "types": {
+          "list": 36
+        }
+      },
+      "count": {
+        "present": 39,
+        "types": {
+          "int": 39
+        }
+      },
+      "credit": {
+        "present": 375,
+        "types": {
+          "int": 375
+        }
+      },
+      "difficulty": {
+        "present": 16,
+        "types": {
+          "int": 16
+        }
+      },
+      "grade": {
+        "present": 453,
+        "types": {
+          "int": 453
+        }
+      },
+      "id": {
+        "present": 6,
+        "types": {
+          "int": 6
+        }
+      },
+      "index": {
+        "present": 9,
+        "types": {
+          "int": 9
+        }
+      },
+      "inverted": {
+        "present": 2,
+        "types": {
+          "bool": 2
+        }
+      },
+      "lamp": {
+        "present": 1,
+        "types": {
+          "int": 1
+        }
+      },
+      "major": {
+        "present": 12,
+        "types": {
+          "int": 12
+        }
+      },
+      "max": {
+        "present": 47,
+        "types": {
+          "int": 47
+        }
+      },
+      "min": {
+        "present": 47,
+        "types": {
+          "int": 47
+        }
+      },
+      "minor": {
+        "present": 12,
+        "types": {
+          "int": 12
+        }
+      },
+      "rating": {
+        "present": 21,
+        "types": {
+          "int": 21
+        }
+      },
+      "ratingPlus": {
+        "present": 4,
+        "types": {
+          "bool": 4
+        }
+      },
+      "song_difficulty": {
+        "present": 488,
+        "types": {
+          "int": 488
+        }
+      },
+      "song_id": {
+        "present": 488,
+        "types": {
+          "str": 488
+        }
+      },
+      "times": {
+        "present": 24,
+        "types": {
+          "int": 24
+        }
+      },
+      "type": {
+        "present": 1072,
+        "types": {
+          "int": 1072
+        }
+      }
+    },
+    "fingerprint_sha256": "330e8b9cdc0fcd896ba39a1dd84177d4ba9bbee8f1ef0970fdf476d6cf047192",
+    "keysets": [
+      {
+        "count": 2,
+        "fields": [
+          "act",
+          "count",
+          "difficulty",
+          "type"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "awakened",
+          "char_id",
+          "inverted",
+          "type"
+        ]
+      },
+      {
+        "count": 36,
+        "fields": [
+          "conditions",
+          "type"
+        ]
+      },
+      {
+        "count": 5,
+        "fields": [
+          "count",
+          "difficulty",
+          "grade",
+          "type"
+        ]
+      },
+      {
+        "count": 4,
+        "fields": [
+          "count",
+          "grade",
+          "rating",
+          "ratingPlus",
+          "type"
+        ]
+      },
+      {
+        "count": 5,
+        "fields": [
+          "count",
+          "grade",
+          "rating",
+          "type"
+        ]
+      },
+      {
+        "count": 23,
+        "fields": [
+          "count",
+          "type"
+        ]
+      },
+      {
+        "count": 375,
+        "fields": [
+          "credit",
+          "type"
+        ]
+      },
+      {
+        "count": 9,
+        "fields": [
+          "difficulty",
+          "index",
+          "type"
+        ]
+      },
+      {
+        "count": 24,
+        "fields": [
+          "grade",
+          "song_difficulty",
+          "song_id",
+          "times",
+          "type"
+        ]
+      },
+      {
+        "count": 415,
+        "fields": [
+          "grade",
+          "song_difficulty",
+          "song_id",
+          "type"
+        ]
+      },
+      {
+        "count": 6,
+        "fields": [
+          "id",
+          "type"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "inverted",
+          "song_difficulty",
+          "song_id",
+          "type"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "lamp",
+          "song_difficulty",
+          "song_id",
+          "type"
+        ]
+      },
+      {
+        "count": 12,
+        "fields": [
+          "major",
+          "minor",
+          "type"
+        ]
+      },
+      {
+        "count": 47,
+        "fields": [
+          "max",
+          "min",
+          "type"
+        ]
+      },
+      {
+        "count": 12,
+        "fields": [
+          "rating",
+          "type"
+        ]
+      },
+      {
+        "count": 47,
+        "fields": [
+          "song_difficulty",
+          "song_id",
+          "type"
+        ]
+      },
+      {
+        "count": 47,
+        "fields": [
+          "type"
+        ]
+      }
+    ],
+    "record_count": 1072
+  },
+  "unlock_condition_by_type": {
+    "0": {
+      "fields": {
+        "credit": {
+          "present": 375,
+          "types": {
+            "int": 375
+          }
+        },
+        "type": {
+          "present": 375,
+          "types": {
+            "int": 375
+          }
+        }
+      },
+      "fingerprint_sha256": "173041356253a6e30253605df0e46c5a26945014958c3f6225dcfce3619c0aa7",
+      "keysets": [
+        {
+          "count": 375,
+          "fields": [
+            "credit",
+            "type"
+          ]
+        }
+      ],
+      "record_count": 375
+    },
+    "1": {
+      "fields": {
+        "grade": {
+          "present": 411,
+          "types": {
+            "int": 411
+          }
+        },
+        "song_difficulty": {
+          "present": 411,
+          "types": {
+            "int": 411
+          }
+        },
+        "song_id": {
+          "present": 411,
+          "types": {
+            "str": 411
+          }
+        },
+        "type": {
+          "present": 411,
+          "types": {
+            "int": 411
+          }
+        }
+      },
+      "fingerprint_sha256": "3e8f7b85c6edf4566ccc4344623dc1a6c8e7d7fe91374de1cab940150606e174",
+      "keysets": [
+        {
+          "count": 411,
+          "fields": [
+            "grade",
+            "song_difficulty",
+            "song_id",
+            "type"
+          ]
+        }
+      ],
+      "record_count": 411
+    },
+    "10": {
+      "fields": {
+        "major": {
+          "present": 12,
+          "types": {
+            "int": 12
+          }
+        },
+        "minor": {
+          "present": 12,
+          "types": {
+            "int": 12
+          }
+        },
+        "type": {
+          "present": 12,
+          "types": {
+            "int": 12
+          }
+        }
+      },
+      "fingerprint_sha256": "3e2750aef6556845194ea5046dfe50eef589eacdec34f81ec29b4f2e97344809",
+      "keysets": [
+        {
+          "count": 12,
+          "fields": [
+            "major",
+            "minor",
+            "type"
+          ]
+        }
+      ],
+      "record_count": 12
+    },
+    "101": {
+      "fields": {
+        "max": {
+          "present": 47,
+          "types": {
+            "int": 47
+          }
+        },
+        "min": {
+          "present": 47,
+          "types": {
+            "int": 47
+          }
+        },
+        "type": {
+          "present": 47,
+          "types": {
+            "int": 47
+          }
+        }
+      },
+      "fingerprint_sha256": "8c576d1a8841c8306bedd7c01364b8f78881bef6cee6371129effa30abf6f360",
+      "keysets": [
+        {
+          "count": 47,
+          "fields": [
+            "max",
+            "min",
+            "type"
+          ]
+        }
+      ],
+      "record_count": 47
+    },
+    "103": {
+      "fields": {
+        "id": {
+          "present": 6,
+          "types": {
+            "int": 6
+          }
+        },
+        "type": {
+          "present": 6,
+          "types": {
+            "int": 6
+          }
+        }
+      },
+      "fingerprint_sha256": "66eea1f9c71e00fa4e91a62c4413d8ec5a47951b2e026aec7bb505e1fac16d3b",
+      "keysets": [
+        {
+          "count": 6,
+          "fields": [
+            "id",
+            "type"
+          ]
+        }
+      ],
+      "record_count": 6
+    },
+    "104": {
+      "fields": {
+        "type": {
+          "present": 34,
+          "types": {
+            "int": 34
+          }
+        }
+      },
+      "fingerprint_sha256": "c656dc700831b0e67e9310f9ea97288b00b6bebda3c05a4fa5838aca6758b9be",
+      "keysets": [
+        {
+          "count": 34,
+          "fields": [
+            "type"
+          ]
+        }
+      ],
+      "record_count": 34
+    },
+    "105": {
+      "fields": {
+        "awakened": {
+          "present": 1,
+          "types": {
+            "bool": 1
+          }
+        },
+        "char_id": {
+          "present": 1,
+          "types": {
+            "int": 1
+          }
+        },
+        "inverted": {
+          "present": 1,
+          "types": {
+            "bool": 1
+          }
+        },
+        "type": {
+          "present": 1,
+          "types": {
+            "int": 1
+          }
+        }
+      },
+      "fingerprint_sha256": "6664f0ee13c9aa410af0cd4271c2fa4a92b588d821251c04c4b8af66df40a295",
+      "keysets": [
+        {
+          "count": 1,
+          "fields": [
+            "awakened",
+            "char_id",
+            "inverted",
+            "type"
+          ]
+        }
+      ],
+      "record_count": 1
+    },
+    "106": {
+      "fields": {
+        "inverted": {
+          "present": 1,
+          "types": {
+            "bool": 1
+          }
+        },
+        "song_difficulty": {
+          "present": 1,
+          "types": {
+            "int": 1
+          }
+        },
+        "song_id": {
+          "present": 1,
+          "types": {
+            "str": 1
+          }
+        },
+        "type": {
+          "present": 1,
+          "types": {
+            "int": 1
+          }
+        }
+      },
+      "fingerprint_sha256": "db86cd25844439a0669b43ee3bb19139382fcb18018cd55735b2c3b50b0bf6cc",
+      "keysets": [
+        {
+          "count": 1,
+          "fields": [
+            "inverted",
+            "song_difficulty",
+            "song_id",
+            "type"
+          ]
+        }
+      ],
+      "record_count": 1
+    },
+    "107": {
+      "fields": {
+        "type": {
+          "present": 3,
+          "types": {
+            "int": 3
+          }
+        }
+      },
+      "fingerprint_sha256": "5105f28405cec9e9f473c6cac033d7c547cd341181e97d209b0a7d431051ed5a",
+      "keysets": [
+        {
+          "count": 3,
+          "fields": [
+            "type"
+          ]
+        }
+      ],
+      "record_count": 3
+    },
+    "108": {
+      "fields": {
+        "type": {
+          "present": 3,
+          "types": {
+            "int": 3
+          }
+        }
+      },
+      "fingerprint_sha256": "5105f28405cec9e9f473c6cac033d7c547cd341181e97d209b0a7d431051ed5a",
+      "keysets": [
+        {
+          "count": 3,
+          "fields": [
+            "type"
+          ]
+        }
+      ],
+      "record_count": 3
+    },
+    "109": {
+      "fields": {
+        "difficulty": {
+          "present": 9,
+          "types": {
+            "int": 9
+          }
+        },
+        "index": {
+          "present": 9,
+          "types": {
+            "int": 9
+          }
+        },
+        "type": {
+          "present": 9,
+          "types": {
+            "int": 9
+          }
+        }
+      },
+      "fingerprint_sha256": "750e93ddd9221b67d386b5e825f1da164a45b8da02efa7eb6a1e0e1c9935ff25",
+      "keysets": [
+        {
+          "count": 9,
+          "fields": [
+            "difficulty",
+            "index",
+            "type"
+          ]
+        }
+      ],
+      "record_count": 9
+    },
+    "110": {
+      "fields": {
+        "type": {
+          "present": 3,
+          "types": {
+            "int": 3
+          }
+        }
+      },
+      "fingerprint_sha256": "5105f28405cec9e9f473c6cac033d7c547cd341181e97d209b0a7d431051ed5a",
+      "keysets": [
+        {
+          "count": 3,
+          "fields": [
+            "type"
+          ]
+        }
+      ],
+      "record_count": 3
+    },
+    "112": {
+      "fields": {
+        "type": {
+          "present": 4,
+          "types": {
+            "int": 4
+          }
+        }
+      },
+      "fingerprint_sha256": "f56dc9c6b744933457c0a71abf95547e5808fe144c3a14510648e203e64370b3",
+      "keysets": [
+        {
+          "count": 4,
+          "fields": [
+            "type"
+          ]
+        }
+      ],
+      "record_count": 4
+    },
+    "113": {
+      "fields": {
+        "act": {
+          "present": 2,
+          "types": {
+            "int": 2
+          }
+        },
+        "count": {
+          "present": 2,
+          "types": {
+            "int": 2
+          }
+        },
+        "difficulty": {
+          "present": 2,
+          "types": {
+            "int": 2
+          }
+        },
+        "type": {
+          "present": 2,
+          "types": {
+            "int": 2
+          }
+        }
+      },
+      "fingerprint_sha256": "3b81cd586eeee3a910391bafde9c42c2c978c68a81f570eca09b03fec6931417",
+      "keysets": [
+        {
+          "count": 2,
+          "fields": [
+            "act",
+            "count",
+            "difficulty",
+            "type"
+          ]
+        }
+      ],
+      "record_count": 2
+    },
+    "114": {
+      "fields": {
+        "count": {
+          "present": 3,
+          "types": {
+            "int": 3
+          }
+        },
+        "type": {
+          "present": 3,
+          "types": {
+            "int": 3
+          }
+        }
+      },
+      "fingerprint_sha256": "293123b002090ab9ed72012e70b52d9ca88ec4b83731197b77aeebaf880cf419",
+      "keysets": [
+        {
+          "count": 3,
+          "fields": [
+            "count",
+            "type"
+          ]
+        }
+      ],
+      "record_count": 3
+    },
+    "115": {
+      "fields": {
+        "count": {
+          "present": 20,
+          "types": {
+            "int": 20
+          }
+        },
+        "type": {
+          "present": 20,
+          "types": {
+            "int": 20
+          }
+        }
+      },
+      "fingerprint_sha256": "03e9fe4ad521cd5b764ec4a1c24156d810b723ca87acd8907e2ba9af247f2f22",
+      "keysets": [
+        {
+          "count": 20,
+          "fields": [
+            "count",
+            "type"
+          ]
+        }
+      ],
+      "record_count": 20
+    },
+    "2": {
+      "fields": {
+        "grade": {
+          "present": 4,
+          "types": {
+            "int": 4
+          }
+        },
+        "song_difficulty": {
+          "present": 49,
+          "types": {
+            "int": 49
+          }
+        },
+        "song_id": {
+          "present": 49,
+          "types": {
+            "str": 49
+          }
+        },
+        "type": {
+          "present": 49,
+          "types": {
+            "int": 49
+          }
+        }
+      },
+      "fingerprint_sha256": "d7f551fac4627568d1538f8afbc8412bfd3919706d2d7179d8fc0d31004e7973",
+      "keysets": [
+        {
+          "count": 4,
+          "fields": [
+            "grade",
+            "song_difficulty",
+            "song_id",
+            "type"
+          ]
+        },
+        {
+          "count": 45,
+          "fields": [
+            "song_difficulty",
+            "song_id",
+            "type"
+          ]
+        }
+      ],
+      "record_count": 49
+    },
+    "3": {
+      "fields": {
+        "grade": {
+          "present": 24,
+          "types": {
+            "int": 24
+          }
+        },
+        "song_difficulty": {
+          "present": 24,
+          "types": {
+            "int": 24
+          }
+        },
+        "song_id": {
+          "present": 24,
+          "types": {
+            "str": 24
+          }
+        },
+        "times": {
+          "present": 24,
+          "types": {
+            "int": 24
+          }
+        },
+        "type": {
+          "present": 24,
+          "types": {
+            "int": 24
+          }
+        }
+      },
+      "fingerprint_sha256": "256c95a288b51c7830db46214410cbbc0d5643cd06649a1339b73a0f1b287ab0",
+      "keysets": [
+        {
+          "count": 24,
+          "fields": [
+            "grade",
+            "song_difficulty",
+            "song_id",
+            "times",
+            "type"
+          ]
+        }
+      ],
+      "record_count": 24
+    },
+    "4": {
+      "fields": {
+        "conditions": {
+          "present": 36,
+          "types": {
+            "list": 36
+          }
+        },
+        "type": {
+          "present": 36,
+          "types": {
+            "int": 36
+          }
+        }
+      },
+      "fingerprint_sha256": "9d5a8ba848ce5ee836979250cb7c5f86d3b0e34ebe607fb0da9aeb93c3a03622",
+      "keysets": [
+        {
+          "count": 36,
+          "fields": [
+            "conditions",
+            "type"
+          ]
+        }
+      ],
+      "record_count": 36
+    },
+    "5": {
+      "fields": {
+        "rating": {
+          "present": 12,
+          "types": {
+            "int": 12
+          }
+        },
+        "type": {
+          "present": 12,
+          "types": {
+            "int": 12
+          }
+        }
+      },
+      "fingerprint_sha256": "4997716035017e8fbe73cac1fb8277c0ab186b4f8a697d3a33849dadb3f063f5",
+      "keysets": [
+        {
+          "count": 12,
+          "fields": [
+            "rating",
+            "type"
+          ]
+        }
+      ],
+      "record_count": 12
+    },
+    "6": {
+      "fields": {
+        "count": {
+          "present": 9,
+          "types": {
+            "int": 9
+          }
+        },
+        "grade": {
+          "present": 9,
+          "types": {
+            "int": 9
+          }
+        },
+        "rating": {
+          "present": 9,
+          "types": {
+            "int": 9
+          }
+        },
+        "ratingPlus": {
+          "present": 4,
+          "types": {
+            "bool": 4
+          }
+        },
+        "type": {
+          "present": 9,
+          "types": {
+            "int": 9
+          }
+        }
+      },
+      "fingerprint_sha256": "421b88d79f2b263400914fa8484a52c1653f560ba6c132078b542038fd59ed1a",
+      "keysets": [
+        {
+          "count": 4,
+          "fields": [
+            "count",
+            "grade",
+            "rating",
+            "ratingPlus",
+            "type"
+          ]
+        },
+        {
+          "count": 5,
+          "fields": [
+            "count",
+            "grade",
+            "rating",
+            "type"
+          ]
+        }
+      ],
+      "record_count": 9
+    },
+    "7": {
+      "fields": {
+        "song_difficulty": {
+          "present": 1,
+          "types": {
+            "int": 1
+          }
+        },
+        "song_id": {
+          "present": 1,
+          "types": {
+            "str": 1
+          }
+        },
+        "type": {
+          "present": 1,
+          "types": {
+            "int": 1
+          }
+        }
+      },
+      "fingerprint_sha256": "6d94e462c48a42f781564d4cb035230fabc71f634d845d0c6580ab385c620548",
+      "keysets": [
+        {
+          "count": 1,
+          "fields": [
+            "song_difficulty",
+            "song_id",
+            "type"
+          ]
+        }
+      ],
+      "record_count": 1
+    },
+    "8": {
+      "fields": {
+        "lamp": {
+          "present": 1,
+          "types": {
+            "int": 1
+          }
+        },
+        "song_difficulty": {
+          "present": 1,
+          "types": {
+            "int": 1
+          }
+        },
+        "song_id": {
+          "present": 1,
+          "types": {
+            "str": 1
+          }
+        },
+        "type": {
+          "present": 1,
+          "types": {
+            "int": 1
+          }
+        }
+      },
+      "fingerprint_sha256": "2936ca6ca6eb86e1d04d900b03713e3e6e2e13c540e582773655744b79c7645f",
+      "keysets": [
+        {
+          "count": 1,
+          "fields": [
+            "lamp",
+            "song_difficulty",
+            "song_id",
+            "type"
+          ]
+        }
+      ],
+      "record_count": 1
+    },
+    "80": {
+      "fields": {
+        "song_difficulty": {
+          "present": 1,
+          "types": {
+            "int": 1
+          }
+        },
+        "song_id": {
+          "present": 1,
+          "types": {
+            "str": 1
+          }
+        },
+        "type": {
+          "present": 1,
+          "types": {
+            "int": 1
+          }
+        }
+      },
+      "fingerprint_sha256": "6d94e462c48a42f781564d4cb035230fabc71f634d845d0c6580ab385c620548",
+      "keysets": [
+        {
+          "count": 1,
+          "fields": [
+            "song_difficulty",
+            "song_id",
+            "type"
+          ]
+        }
+      ],
+      "record_count": 1
+    },
+    "9": {
+      "fields": {
+        "count": {
+          "present": 5,
+          "types": {
+            "int": 5
+          }
+        },
+        "difficulty": {
+          "present": 5,
+          "types": {
+            "int": 5
+          }
+        },
+        "grade": {
+          "present": 5,
+          "types": {
+            "int": 5
+          }
+        },
+        "type": {
+          "present": 5,
+          "types": {
+            "int": 5
+          }
+        }
+      },
+      "fingerprint_sha256": "374aac3c23c7c295fef4ffc76b56a19494e1e6cc8f696b038bd18e2b61759f49",
+      "keysets": [
+        {
+          "count": 5,
+          "fields": [
+            "count",
+            "difficulty",
+            "grade",
+            "type"
+          ]
+        }
+      ],
+      "record_count": 5
+    }
+  },
+  "zh_hans_message": {
+    "fields": {},
+    "fingerprint_sha256": "2312c1dd9b69fa01619ad68eee3368945995a8baa5d14ded246c115bbc09aa81",
+    "keysets": [],
+    "record_count": 0
+  }
+}

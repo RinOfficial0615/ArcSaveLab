@@ -1,0 +1,1 @@
+"""User-interface message catalogs."""
