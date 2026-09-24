@@ -51,7 +51,7 @@ class SourceSpec:
 @dataclass(frozen=True)
 class OpenRequest:
     sources: Sequence[SourceSpec]
-    game_version: str = "7.0.255c"
+    game_version: str = "7.0.260c"
     locale: str = "en"
     device_id: str | None = None
     user_id: int | None = None

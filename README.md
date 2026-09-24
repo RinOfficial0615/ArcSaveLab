@@ -50,7 +50,7 @@ an installed game, a sibling checkout, or a particular user's home directory at 
 | Unlock progress | `un` | Requires preferences to store the companion digest |
 | Missions | `ms` | Requires preferences to store the companion digest |
 
-Latest supported version: **7.0.255c**. The bundled catalog contains 553 song records (552 live), 1,833 charts,
+Latest supported version: **7.0.260c**. The bundled catalog contains 554 song records (553 live), 1,837 charts,
 62 packs and 100 partners. It includes official Partner names and skill descriptions,
 but no music, artwork, story scripts or complete game translation message catalog. Unknown XML nodes and SQLite schema
 objects are retained. Finale/account diagnostics are read-only. Device-bound fields

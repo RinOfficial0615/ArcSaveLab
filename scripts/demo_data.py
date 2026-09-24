@@ -92,7 +92,7 @@ def create_demo(root: Path) -> None:
                 "INSERT INTO scores VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)",
                 (
                     index,
-                    "7.0.255c",
+                    "7.0.260c",
                     calculate_score(pure, far, lost, shiny),
                     shiny,
                     pure,

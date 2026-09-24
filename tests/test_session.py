@@ -274,3 +274,75 @@ def test_account_identity_is_masked(synthetic_saves: object) -> None:
         assert player.fields[0].sensitive
     finally:
         session.close(discard=True)
+
+
+def test_score_rows_label_inscribed_charts(tmp_path: Path) -> None:
+    """7.0 Inscribed charts occupy the BYD slot and are labeled INS, not BYD."""
+    import sqlite3
+
+    from arcsavelab.formats.st3_sqlite import calculate_score
+    from arcsavelab.interface import OpenRequest, SourceSpec
+
+    st3 = tmp_path / "st3"
+    connection = sqlite3.connect(st3)
+    try:
+        connection.executescript(
+            """
+            CREATE TABLE scores(
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                version TEXT NOT NULL,
+                score INTEGER NOT NULL,
+                shinyPerfectCount INTEGER NOT NULL,
+                perfectCount INTEGER NOT NULL,
+                nearCount INTEGER NOT NULL,
+                missCount INTEGER NOT NULL,
+                date INTEGER NOT NULL,
+                songId TEXT NOT NULL,
+                songDifficulty INTEGER NOT NULL,
+                modifier INTEGER NOT NULL,
+                health INTEGER NOT NULL,
+                ct INTEGER NOT NULL DEFAULT 0
+            );
+            CREATE TABLE cleartypes(
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                songId TEXT NOT NULL,
+                songDifficulty INTEGER NOT NULL,
+                clearType INTEGER NOT NULL,
+                ct INTEGER NOT NULL DEFAULT 0
+            );
+            CREATE TABLE schemaversion(appliedVersion INTEGER NOT NULL);
+            INSERT INTO schemaversion(appliedVersion) VALUES(4);
+            """
+        )
+        for song_id, difficulty in (("deinosphainein", 3), ("sayonarahatsukoi", 3)):
+            connection.execute(
+                "INSERT INTO scores(version,score,shinyPerfectCount,perfectCount,"
+                "nearCount,missCount,date,songId,songDifficulty,modifier,health,ct) "
+                "VALUES(?,?,?,?,?,?,?,?,?,?,?,?)",
+                (
+                    "7.0.260c",
+                    calculate_score(90, 8, 2, 5),
+                    5,
+                    90,
+                    8,
+                    2,
+                    1_700_000_000_000,
+                    song_id,
+                    difficulty,
+                    0,
+                    100,
+                    0,
+                ),
+            )
+        connection.commit()
+    finally:
+        connection.close()
+
+    session = SaveSession.open(OpenRequest(sources=(SourceSpec(SaveKind.SCORE_DATABASE, st3),)))
+    try:
+        scores = session.inspect(BrowseQuery(section=Section.SCORES)).sections[0]
+        labels = [item.label for item in scores.items]
+        assert any(" · INS · " in label for label in labels)
+        assert any(" · BYD · " in label for label in labels)
+    finally:
+        session.close(discard=True)

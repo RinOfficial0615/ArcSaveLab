@@ -9,6 +9,7 @@ from textual.app import ComposeResult
 from textual.containers import Horizontal, Vertical, VerticalScroll
 from textual.widgets import Button, Input, Label, Select, Static, Switch
 
+from arcsavelab.formats.st3_sqlite import calculate_score
 from arcsavelab.i18n import Translator
 from arcsavelab.interface import BatchSet, FieldView, ItemView, SetField
 
@@ -20,6 +21,8 @@ class EditScreen(ResponsiveModal[bool]):
     """One isolated form per edit; validation errors never dismiss or lose the draft."""
 
     BINDINGS = [("escape", "cancel", "Cancel"), ("ctrl+enter", "apply", "Apply")]
+
+    _SCORE_PREVIEW_FIELDS = frozenset({"shiny_pure", "pure", "far", "lost"})
 
     def __init__(
         self,
@@ -46,6 +49,11 @@ class EditScreen(ResponsiveModal[bool]):
                 for item in items[1:]
             )
         }
+        self._score_field = (
+            next((field for field in items[0].fields if field.id == "score"), None)
+            if len(items) == 1
+            else None
+        )
         self.fields = tuple(
             field
             for field in items[0].fields
@@ -167,6 +175,38 @@ class EditScreen(ResponsiveModal[bool]):
             self.query_one("#edit-0").focus(scroll_visible=False)
         self.call_after_refresh(
             self.query_one("#form-fields", VerticalScroll).scroll_home, animate=False
+        )
+
+    @on(Input.Changed)
+    def preview_score(self, event: Input.Changed) -> None:
+        """Live-update the derived score while judgement inputs change.
+
+        The static explanation above the form is intentionally left alone.
+        """
+        if self._score_field is None:
+            return
+        changed_index = next(
+            (index for index, field in enumerate(self.fields) if f"edit-{index}" == event.input.id),
+            None,
+        )
+        if changed_index is None or self.fields[changed_index].id not in self._SCORE_PREVIEW_FIELDS:
+            return
+        judgements: dict[str, int] = {}
+        for index, field in enumerate(self.fields):
+            if field.id not in self._SCORE_PREVIEW_FIELDS:
+                continue
+            widget = self.query_one(f"#edit-{index}", Input)
+            try:
+                judgements[field.id] = int(widget.value.strip())
+            except ValueError:
+                return
+        score = calculate_score(
+            judgements["pure"], judgements["far"], judgements["lost"], judgements["shiny_pure"]
+        )
+        self.query_one("#detail-score", Static).update(
+            Text(f"{self.tr(self._score_field.label_id)}  ").append_text(
+                Text(str(score), style="#80caff")
+            )
         )
 
     def action_cancel(self) -> None:

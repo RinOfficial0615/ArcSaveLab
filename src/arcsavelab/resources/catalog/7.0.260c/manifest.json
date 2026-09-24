@@ -1,20 +1,20 @@
 {
   "format": "arcsavelab.catalog-manifest/v1",
-  "game_version": "7.0.255c",
+  "game_version": "7.0.260c",
   "outputs": {
     "catalog.json": {
-      "file_sha256": "b1522c3b626b18191bd539db67e1f371ce5ddb83227fed15b3bfc7b3f275bc94",
-      "sha256": "0cb5e6bc41fb3e9bcd86461c7a0d2433754ee57dc9f07b9ea7b80d79dbffdbb6"
+      "file_sha256": "107bf52a0f8758841db1617ade11c28bfe368f1adb7f4d9821ec4385b8493086",
+      "sha256": "35425cdc688439162f1624e8db70bddbf46f679a23ee76ec9036318d78bdef55"
     },
     "schema.json": {
-      "file_sha256": "06024e579b19380c585b33c6824e3ab689bcf263ea64c362ea6ac278c9cedd9e",
-      "sha256": "5ff0251a1db7dc7341a63f311a6417b163ec6011619eb028719d9e9e1d47288d"
+      "file_sha256": "b0fde6323ce9fefccaf0b166087b595c09d5549030d6b6b01f1e204f44e3b0fa",
+      "sha256": "a22097de51a19eec83dfa083b9516aa6d597758c0d44f30ec14def6720ac3bd2"
     }
   },
   "source_apk": {
-    "filename": "arcaea_7.0.255c.apk",
-    "sha256": "5aeb5edc425808605cc8a682cd9269aecae671fdab9573376b100d08ee3577c6",
-    "size": 2118477081
+    "filename": "arcaea_7.0.260c.apk",
+    "sha256": "2ccc879de95932d47ff62fc1bc18acbbeb43f43671302e4240498005f6e2b9e2",
+    "size": 2119430448
   },
   "source_assets": [
     {
@@ -228,11 +228,11 @@
       "size": 2203
     },
     {
-      "compressed_size": 9136,
-      "crc32": "e5df42a6",
+      "compressed_size": 9139,
+      "crc32": "15f847b9",
       "path": "assets/char/characters.json",
-      "sha256": "a7e130503ea8c29027863f3e90aa8347b65b8cd66f65792382766f5d6dc08010",
-      "size": 64364
+      "sha256": "35a037a0fa1b2058eb9c56ee3f00c4bcfda913d139a88618c3dffa5b1d980a3a",
+      "size": 64366
     },
     {
       "compressed_size": 33096,
@@ -242,11 +242,11 @@
       "size": 89843
     },
     {
-      "compressed_size": 105813,
-      "crc32": "f0d1e55f",
+      "compressed_size": 106119,
+      "crc32": "a9f682e5",
       "path": "assets/songs/songlist",
-      "sha256": "d0fa964e32d16ca486255d123880e200bb01504cdb26c78c729de9ae0120ba86",
-      "size": 1096227
+      "sha256": "a0b07a185306fb3e9da4bbfaa17a1fea44d5cedc8712619e992b1c402b6319fa",
+      "size": 1099065
     },
     {
       "compressed_size": 7909,
@@ -263,11 +263,11 @@
       "size": 5458
     },
     {
-      "compressed_size": 55605,
-      "crc32": "932f03a1",
+      "compressed_size": 56301,
+      "crc32": "61f7931b",
       "path": "assets/tl/zh-Hans.mo",
-      "sha256": "950def131e48157b428a570d9805a7c6e1007b541909ddc49a432bb55dd75ee5",
-      "size": 131446
+      "sha256": "071e982e32e1afb540bcba349b98f32e7b2a511b95f8c91c8e74f3b0122e8f41",
+      "size": 132733
     }
   ]
 }

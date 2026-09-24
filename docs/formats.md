@@ -2,20 +2,20 @@
 
 ## Validation layers
 
-- **Catalog:** rebuilt from the local 7.0.255c APK. APK SHA-256:
-  `5aeb5edc425808605cc8a682cd9269aecae671fdab9573376b100d08ee3577c6`.
+- **Catalog:** rebuilt from the local 7.0.260c APK. APK SHA-256:
+  `2ccc879de95932d47ff62fc1bc18acbbeb43f43671302e4240498005f6e2b9e2`.
   The manifest records the exact hashes of 35 metadata assets plus the Chinese localization asset and both generated outputs.
 - **File behavior:** synthetic tests exercise the inherited format contracts. Local reference
   files were separately opened, no-op checked, edited on copies, exported and reopened.
   Reference files are not published, copied into tests or required in CI.
-- **Game runtime:** actual re-import into a running 7.0.255c game has not been validated by
+- **Game runtime:** actual re-import into a running 7.0.260c game has not been validated by
   these host tests. The sample file dates alone do not establish which native build wrote them.
   The digest implementations are inherited format knowledge, not newly recovered native offsets.
 
 To reproduce the public catalog (the output directory is explicit):
 
 ```console
-arcsavelab catalog build --apk ./game.apk --version 7.0.255c --out ./catalog-output
+arcsavelab catalog build --apk ./game.apk --version 7.0.260c --out ./catalog-output
 ```
 
 Inspect its manifest, compare normalized data, and run `verify_catalog_directory` before

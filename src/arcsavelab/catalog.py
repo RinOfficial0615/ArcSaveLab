@@ -445,7 +445,7 @@ def _verify_directory(
     return verification, catalog, schema, manifest
 
 
-def verify_catalog(version: str | GameVersion = "7.0.255c") -> CatalogVerification:
+def verify_catalog(version: str | GameVersion = "7.0.260c") -> CatalogVerification:
     """Verify packaged catalog hashes, schema fingerprint, counts, and relations."""
 
     requested = GameVersion.parse(version)
@@ -494,6 +494,7 @@ def _parse_song(row: Mapping[str, Any]) -> Song:
 
 
 def _parse_chart(row: Mapping[str, Any]) -> Chart:
+    alias = row.get("rating_class_alias")
     return Chart(
         song_id=row["song_id"],
         difficulty=Difficulty.from_code(row["difficulty"]),
@@ -506,6 +507,7 @@ def _parse_chart(row: Mapping[str, Any]) -> Chart:
         hidden_until=row.get("hidden_until"),
         hidden_until_unlocked=bool(row.get("hidden_until_unlocked", False)),
         world_unlock=bool(row.get("world_unlock", False)),
+        rating_class_alias=int(alias) if alias is not None else None,
     )
 
 
@@ -777,7 +779,7 @@ def _load_packaged(version: str) -> GameCatalog:
     return _to_domain(catalog)
 
 
-def load_catalog(version: str | GameVersion = "7.0.255c") -> GameCatalog:
+def load_catalog(version: str | GameVersion = "7.0.260c") -> GameCatalog:
     """Load a verified packaged catalog as immutable game-domain objects."""
 
     requested = GameVersion.parse(version).value

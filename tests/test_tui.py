@@ -1,6 +1,7 @@
 from pathlib import Path
 
 import pytest
+from rich.text import Text
 from textual.pilot import Pilot
 from textual.widgets import DataTable, Input, OptionList, Select, Static, Switch
 
@@ -246,6 +247,9 @@ async def test_compact_review_inplace_and_backup_restore(synthetic_saves: Synthe
         await pilot.pause()
         assert isinstance(app.screen, ReviewScreen)
         assert synthetic_saves.preferences.read_bytes() == original
+        # A Button swallows clicks while its pressed-state effect (-active) is
+        # still running (0.2s by default); wait it out before pressing again.
+        await pilot.pause(0.3)
         await pilot.click("#save")
         await pilot.pause()
         await pilot.click("#confirm")
@@ -262,3 +266,40 @@ async def test_compact_review_inplace_and_backup_restore(synthetic_saves: Synthe
         await pilot.pause()
         assert synthetic_saves.preferences.read_bytes() == original
         assert app.session and not app.session.dirty
+
+
+async def test_scores_table_uses_game_hues(synthetic_saves: SyntheticSaveSet) -> None:
+    """Difficulty, judgement and clear-type cells render with the game's hues."""
+    app = ArcSaveLabApp(synthetic_saves.request(SaveKind.SCORE_DATABASE))
+    async with app.run_test(size=(120, 36)) as pilot:
+        await navigate(app, pilot, 11)
+        table = app.query_one("#items", DataTable)
+        cells = table.get_row_at(0)
+        label, pure, far, lost, clear = cells[1], cells[3], cells[4], cells[5], cells[6]
+        assert isinstance(label, Text) and "FTR" in label.plain
+        assert "#e377ce" in [span.style for span in label.spans]
+        assert isinstance(pure, Text) and pure.style == "#77dd99"
+        assert "#30c060" in [span.style for span in pure.spans]
+        assert isinstance(far, Text) and far.style == "#ffd479"
+        assert isinstance(lost, Text) and lost.style == "#ff8585"
+        assert isinstance(clear, Text) and clear.style == "#9ca5b5"
+
+
+async def test_score_edit_recalculates_score_preview(synthetic_saves: SyntheticSaveSet) -> None:
+    """Changing judgements updates the derived score display inside the form."""
+    from arcsavelab.formats.st3_sqlite import calculate_score
+
+    app = ArcSaveLabApp(synthetic_saves.request(SaveKind.SCORE_DATABASE))
+    async with app.run_test(size=(120, 36)) as pilot:
+        await navigate(app, pilot, 11)
+        app.query_one("#items").focus()
+        await pilot.press("enter")
+        await pilot.pause()
+        screen = app.screen
+        assert isinstance(screen, EditScreen)
+        pure_index = next(i for i, field in enumerate(screen.fields) if field.id == "pure")
+        screen.query_one(f"#edit-{pure_index}", Input).value = "100"
+        await pilot.pause()
+        expected = calculate_score(100, 8, 2, 5)
+        content = screen.query_one("#detail-score", Static).content
+        assert str(expected) in (content.plain if isinstance(content, Text) else str(content))

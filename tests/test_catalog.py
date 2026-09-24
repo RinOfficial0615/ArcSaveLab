@@ -18,19 +18,19 @@ from arcsavelab.domain import Difficulty, UnlockRequirementKind
 
 
 def test_packaged_current_catalog_is_verified_and_loadable() -> None:
-    assert "7.0.255c" in list_catalog_versions()
+    assert "7.0.260c" in list_catalog_versions()
 
-    verification = verify_catalog("7.0.255c")
-    catalog = load_catalog("7.0.255c")
+    verification = verify_catalog("7.0.260c")
+    catalog = load_catalog("7.0.260c")
 
     assert verification.valid
-    assert verification.version == "7.0.255c"
+    assert verification.version == "7.0.260c"
     assert verification.verified_files == ("catalog.json", "schema.json")
     assert verification.source_asset_count == 36
-    assert catalog.version.value == "7.0.255c"
-    assert catalog.summary.song_count == 553
-    assert catalog.summary.live_song_count == 552
-    assert catalog.summary.chart_count == 1833
+    assert catalog.version.value == "7.0.260c"
+    assert catalog.summary.song_count == 554
+    assert catalog.summary.live_song_count == 553
+    assert catalog.summary.chart_count == 1837
     assert catalog.summary.pack_count == 62
     assert catalog.summary.partner_count == 100
     assert catalog.summary.story_entry_count == 196
@@ -40,7 +40,7 @@ def test_packaged_current_catalog_is_verified_and_loadable() -> None:
 
 
 def test_catalog_returns_domain_entities_and_relations() -> None:
-    catalog = load_catalog("7.0.255c")
+    catalog = load_catalog()
 
     song = catalog.song("sayonarahatsukoi")
     eternal = catalog.chart(song.id, Difficulty.ETERNAL)
@@ -51,6 +51,10 @@ def test_catalog_returns_domain_entities_and_relations() -> None:
     assert catalog.charts_for_song(song.id)[-1].difficulty is Difficulty.ETERNAL
     assert unlock.requirements[0].kind is UnlockRequirementKind.CLEAR_SONG
     assert catalog.translate("Hikari", locale="zh-Hans") == "Hikari"
+
+    # 7.0 marks Inscribed charts with a rating-class alias inside the BYD slot.
+    assert catalog.chart("deinosphainein", Difficulty.BEYOND).rating_class_alias == 1
+    assert catalog.chart("sayonarahatsukoi", Difficulty.FUTURE).rating_class_alias is None
 
     assert not hasattr(song, "idx")
     assert not hasattr(eternal, "ratingClass")
@@ -64,18 +68,18 @@ def test_catalog_rejects_unknown_packaged_version() -> None:
 
 @pytest.mark.parametrize("filename", ["catalog.json", "schema.json"])
 def test_directory_loader_detects_hash_tampering(tmp_path: Path, filename: str) -> None:
-    source = Path(__file__).parents[1] / "src" / "arcsavelab" / "resources" / "catalog" / "7.0.255c"
+    source = Path(__file__).parents[1] / "src" / "arcsavelab" / "resources" / "catalog" / "7.0.260c"
     target = tmp_path / "catalog"
     shutil.copytree(source, target)
     with (target / filename).open("ab") as stream:
         stream.write(b"\n")
 
     with pytest.raises(CatalogIntegrityError, match=filename):
-        load_catalog_from_directory(target, expected_version="7.0.255c")
+        load_catalog_from_directory(target, expected_version="7.0.260c")
 
 
 def test_directory_loader_detects_schema_fingerprint_mismatch(tmp_path: Path) -> None:
-    source = Path(__file__).parents[1] / "src" / "arcsavelab" / "resources" / "catalog" / "7.0.255c"
+    source = Path(__file__).parents[1] / "src" / "arcsavelab" / "resources" / "catalog" / "7.0.260c"
     target = tmp_path / "catalog"
     shutil.copytree(source, target)
 
@@ -112,4 +116,4 @@ def test_directory_loader_detects_schema_fingerprint_mismatch(tmp_path: Path) ->
     )
 
     with pytest.raises(CatalogIntegrityError, match="schema fingerprint"):
-        load_catalog_from_directory(target, expected_version="7.0.255c")
+        load_catalog_from_directory(target, expected_version="7.0.260c")

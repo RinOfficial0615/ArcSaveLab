@@ -9,7 +9,7 @@ from .conftest import SyntheticSaveSet
 
 
 def test_all_partners_have_official_names_and_skill_text() -> None:
-    catalog = load_catalog("7.0.255c")
+    catalog = load_catalog("7.0.260c")
     for partner in catalog.partners:
         assert partner.display_name.resolve("zh-Hans")
         assert partner.display_name.resolve("en")

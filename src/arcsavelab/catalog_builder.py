@@ -195,6 +195,7 @@ def normalize_song(row: dict[str, Any]) -> dict[str, Any]:
 def normalize_chart(song: dict[str, Any], row: dict[str, Any]) -> dict[str, Any]:
     known = {
         "ratingClass",
+        "ratingClassAlias",
         "rating",
         "ratingPlus",
         "chartDesigner",
@@ -212,6 +213,8 @@ def normalize_chart(song: dict[str, Any], row: dict[str, Any]) -> dict[str, Any]
         "difficulty_name": DIFFICULTY_NAMES.get(difficulty, f"UNKNOWN_{difficulty}"),
         "rating": row["rating"],
         "rating_plus": bool(row.get("ratingPlus", False)),
+        # 7.0 marks Inscribed charts with a rating-class alias inside the BYD slot.
+        "rating_class_alias": row.get("ratingClassAlias"),
         "chart_designer": row.get("chartDesigner", ""),
         "jacket_designer": row.get("jacketDesigner", ""),
         "version": row.get("version", song.get("version")),

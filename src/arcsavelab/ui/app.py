@@ -34,12 +34,17 @@ from arcsavelab.workspace import WorkspaceLifecycle
 
 from .backups import BackupScreen
 from .common import (
+    DIFFICULTY_STYLES,
+    FAR_STYLE,
+    LOST_STYLE,
+    PURE_STYLE,
     SECTION_NAMES,
+    SHINY_PURE_STYLE,
     availability_rich,
+    clear_type_rich,
     editable,
     error_text,
     field_rich,
-    field_text,
     local,
 )
 from .dialogs import ConfirmScreen, IdentityScreen, OpenScreen, ReviewScreen
@@ -284,12 +289,15 @@ class ArcSaveLabApp(App[int]):
                 fields = {field.id: field for field in item.fields}
                 table.add_row(
                     "◆" if item.id in self.marked else "·",
-                    Text(item.label),
+                    self._score_row_label(item),
                     f"{fields['score'].value:,}",
-                    f"{fields['pure'].value} (+{fields['shiny_pure'].value})",
-                    str(fields["far"].value),
-                    str(fields["lost"].value),
-                    Text(field_text(fields["clear_type"], self.tr)),
+                    Text(
+                        f"{fields['pure'].value} ",
+                        style=PURE_STYLE,
+                    ).append(f"(+{fields['shiny_pure'].value})", style=SHINY_PURE_STYLE),
+                    Text(str(fields["far"].value), style=FAR_STYLE),
+                    Text(str(fields["lost"].value), style=LOST_STYLE),
+                    clear_type_rich(fields["clear_type"], self.tr),
                     key=item.id,
                 )
                 continue
@@ -339,6 +347,21 @@ class ArcSaveLabApp(App[int]):
             + local(self.tr, "Double-click / Enter for details", "双击 / Enter 查看详情")
         )
         self.render_selection()
+
+    def _score_row_label(self, item: ItemView) -> Text:
+        """Rebuild a score row label with the game's difficulty hue on the title.
+
+        Score labels are ``title · DIFFICULTY · CT n``; the structured parts come
+        from the session tags and item ID instead of parsing the localized title.
+        """
+        if len(item.tags) < 3 or item.id.count(":") < 3:
+            return Text(item.label)
+        title, difficulty = item.tags[2], item.tags[1]
+        control = item.id.rsplit(":", 1)[-1]
+        label = Text(title).append(" · ")
+        label.append(difficulty, style=DIFFICULTY_STYLES.get(difficulty, ""))
+        label.append(f" · CT {control}")
+        return label
 
     def render_overview(self) -> None:
         self.query_one("#page-title", Static).update(

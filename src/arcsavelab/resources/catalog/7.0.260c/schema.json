@@ -38,9 +38,9 @@
         }
       },
       "chartDesigner": {
-        "present": 1833,
+        "present": 1837,
         "types": {
-          "str": 1833
+          "str": 1837
         }
       },
       "date": {
@@ -62,9 +62,9 @@
         }
       },
       "jacketDesigner": {
-        "present": 1833,
+        "present": 1837,
         "types": {
-          "str": 1833
+          "str": 1837
         }
       },
       "jacketOverride": {
@@ -92,15 +92,15 @@
         }
       },
       "rating": {
-        "present": 1833,
+        "present": 1837,
         "types": {
-          "int": 1833
+          "int": 1837
         }
       },
       "ratingClass": {
-        "present": 1833,
+        "present": 1837,
         "types": {
-          "int": 1833
+          "int": 1837
         }
       },
       "ratingClassAlias": {
@@ -110,9 +110,9 @@
         }
       },
       "ratingPlus": {
-        "present": 388,
+        "present": 389,
         "types": {
-          "bool": 388
+          "bool": 389
         }
       },
       "title_localized": {
@@ -134,7 +134,7 @@
         }
       }
     },
-    "fingerprint_sha256": "df41eddf443cc8f2cb43736518ec0b53e7555105a38e8719c7775bfcb29ac9cc",
+    "fingerprint_sha256": "7c3368fe44ac6045b3d9af61da66e981dd684df8a8248d922f598b4e6ed0d519",
     "keysets": [
       {
         "count": 2,
@@ -631,7 +631,7 @@
         ]
       },
       {
-        "count": 1342,
+        "count": 1345,
         "fields": [
           "chartDesigner",
           "jacketDesigner",
@@ -640,7 +640,7 @@
         ]
       },
       {
-        "count": 349,
+        "count": 350,
         "fields": [
           "chartDesigner",
           "jacketDesigner",
@@ -650,9 +650,9 @@
         ]
       }
     ],
-    "record_count": 1833
+    "record_count": 1837
   },
-  "fingerprint_sha256": "9655f924c4e34ddd3b4317005a866521f04285ed28138438933573992346c06e",
+  "fingerprint_sha256": "f1ac8bfd5fe81f6cf7f766d5fd161cef5c5da5b20f259c2944636246dbad38bc",
   "mission": {
     "fields": {
       "id": {
@@ -1573,27 +1573,27 @@
         }
       },
       "artist": {
-        "present": 552,
+        "present": 553,
         "types": {
-          "str": 552
+          "str": 553
         }
       },
       "audioPreview": {
-        "present": 552,
+        "present": 553,
         "types": {
-          "int": 552
+          "int": 553
         }
       },
       "audioPreviewEnd": {
-        "present": 552,
+        "present": 553,
         "types": {
-          "int": 552
+          "int": 553
         }
       },
       "bg": {
-        "present": 552,
+        "present": 553,
         "types": {
-          "str": 552
+          "str": 553
         }
       },
       "bg_daynight": {
@@ -1603,22 +1603,22 @@
         }
       },
       "bg_inverse": {
-        "present": 463,
+        "present": 464,
         "types": {
-          "str": 463
+          "str": 464
         }
       },
       "bpm": {
-        "present": 552,
+        "present": 553,
         "types": {
-          "str": 552
+          "str": 553
         }
       },
       "bpm_base": {
-        "present": 552,
+        "present": 553,
         "types": {
           "float": 4,
-          "int": 548
+          "int": 549
         }
       },
       "byd_local_unlock": {
@@ -1628,15 +1628,15 @@
         }
       },
       "category": {
-        "present": 134,
+        "present": 135,
         "types": {
-          "str": 134
+          "str": 135
         }
       },
       "date": {
-        "present": 552,
+        "present": 553,
         "types": {
-          "int": 552
+          "int": 553
         }
       },
       "deleted": {
@@ -1646,21 +1646,21 @@
         }
       },
       "difficulties": {
-        "present": 552,
+        "present": 553,
         "types": {
-          "list": 552
+          "list": 553
         }
       },
       "id": {
-        "present": 553,
+        "present": 554,
         "types": {
-          "str": 553
+          "str": 554
         }
       },
       "idx": {
-        "present": 553,
+        "present": 554,
         "types": {
-          "int": 553
+          "int": 554
         }
       },
       "jacket_localized": {
@@ -1676,45 +1676,45 @@
         }
       },
       "no_stream": {
-        "present": 56,
+        "present": 64,
         "types": {
-          "bool": 56
+          "bool": 64
         }
       },
       "purchase": {
-        "present": 552,
+        "present": 553,
         "types": {
-          "str": 552
+          "str": 553
         }
       },
       "remote_dl": {
-        "present": 536,
+        "present": 537,
         "types": {
-          "bool": 536
+          "bool": 537
         }
       },
       "search_artist": {
+        "present": 552,
+        "types": {
+          "dict": 552
+        }
+      },
+      "search_title": {
         "present": 551,
         "types": {
           "dict": 551
         }
       },
-      "search_title": {
-        "present": 550,
-        "types": {
-          "dict": 550
-        }
-      },
       "set": {
-        "present": 552,
+        "present": 553,
         "types": {
-          "str": 552
+          "str": 553
         }
       },
       "side": {
-        "present": 552,
+        "present": 553,
         "types": {
-          "int": 552
+          "int": 553
         }
       },
       "songlist_hidden": {
@@ -1736,25 +1736,25 @@
         }
       },
       "title_localized": {
-        "present": 552,
+        "present": 553,
         "types": {
-          "dict": 552
+          "dict": 553
         }
       },
       "version": {
-        "present": 552,
+        "present": 553,
         "types": {
-          "str": 552
+          "str": 553
         }
       },
       "world_unlock": {
-        "present": 476,
+        "present": 477,
         "types": {
-          "bool": 476
+          "bool": 477
         }
       }
     },
-    "fingerprint_sha256": "32b26c8c9154066fb7ab2dc3398a1cf1e01192e2f1c9351e95008ab365f6f125",
+    "fingerprint_sha256": "fa87f5d9208f051973e0b93624f6a74e25a755e2709e753bea83ef376b9a67f9",
     "keysets": [
       {
         "count": 3,
@@ -1930,6 +1930,7 @@
           "difficulties",
           "id",
           "idx",
+          "no_stream",
           "purchase",
           "remote_dl",
           "search_artist",
@@ -2160,7 +2161,7 @@
         ]
       },
       {
-        "count": 86,
+        "count": 87,
         "fields": [
           "artist",
           "audioPreview",
@@ -2294,6 +2295,33 @@
         ]
       },
       {
+        "count": 6,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "no_stream",
+          "purchase",
+          "remote_dl",
+          "search_artist",
+          "search_title",
+          "set",
+          "side",
+          "source_localized",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
         "count": 1,
         "fields": [
           "artist",
@@ -2314,6 +2342,31 @@
           "search_title",
           "set",
           "side",
+          "title_localized",
+          "version",
+          "world_unlock"
+        ]
+      },
+      {
+        "count": 1,
+        "fields": [
+          "artist",
+          "audioPreview",
+          "audioPreviewEnd",
+          "bg",
+          "bg_inverse",
+          "bpm",
+          "bpm_base",
+          "date",
+          "difficulties",
+          "id",
+          "idx",
+          "no_stream",
+          "purchase",
+          "remote_dl",
+          "set",
+          "side",
+          "source_localized",
           "title_localized",
           "version",
           "world_unlock"
@@ -2367,32 +2420,6 @@
           "set",
           "side",
           "source_copyright",
-          "title_localized",
-          "version",
-          "world_unlock"
-        ]
-      },
-      {
-        "count": 6,
-        "fields": [
-          "artist",
-          "audioPreview",
-          "audioPreviewEnd",
-          "bg",
-          "bg_inverse",
-          "bpm",
-          "bpm_base",
-          "date",
-          "difficulties",
-          "id",
-          "idx",
-          "purchase",
-          "remote_dl",
-          "search_artist",
-          "search_title",
-          "set",
-          "side",
-          "source_localized",
           "title_localized",
           "version",
           "world_unlock"
@@ -2466,30 +2493,6 @@
           "search_artist",
           "set",
           "side",
-          "title_localized",
-          "version",
-          "world_unlock"
-        ]
-      },
-      {
-        "count": 1,
-        "fields": [
-          "artist",
-          "audioPreview",
-          "audioPreviewEnd",
-          "bg",
-          "bg_inverse",
-          "bpm",
-          "bpm_base",
-          "date",
-          "difficulties",
-          "id",
-          "idx",
-          "purchase",
-          "remote_dl",
-          "set",
-          "side",
-          "source_localized",
           "title_localized",
           "version",
           "world_unlock"
@@ -2878,7 +2881,7 @@
         ]
       }
     ],
-    "record_count": 553
+    "record_count": 554
   },
   "story_entry": {
     "fields": {

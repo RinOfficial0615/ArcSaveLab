@@ -165,6 +165,8 @@ CLEAR_TYPES = (
     (5, "Hard Clear"),
 )
 
+_DIFFICULTY_LABELS = ("PST", "PRS", "FTR", "BYD", "ETR")
+
 
 @dataclass(frozen=True)
 class _Snapshot:
@@ -345,7 +347,9 @@ class SaveSession:
             expected = {mission.id for mission in self.catalog.missions}
             actual = set(self.missions.keys())
             if actual - expected:
-                reasons.append("mission catalog contains entries unknown to 7.0.255c")
+                reasons.append(
+                    f"mission catalog contains entries unknown to {self.request.game_version}"
+                )
         if self.unlocks is not None:
             known_persisted_types = {0, 3, 101, 102, 103, 107, 109, 110, 112, 114, 115}
             for key in self.unlocks.keys():
@@ -359,7 +363,10 @@ class SaveSession:
                     reasons.append("unlock progress contains a non-numeric condition type")
                     break
                 if condition_type not in known_persisted_types:
-                    reasons.append("unlock progress contains a condition type unknown to 7.0.255c")
+                    reasons.append(
+                        "unlock progress contains a condition type "
+                        f"unknown to {self.request.game_version}"
+                    )
                     break
         if self.score_database is not None and self.score_database.schema_version != 4:
             reasons.append(
@@ -971,6 +978,19 @@ class SaveSession:
         )
         return self._section(Section.MISSIONS, availability, items, query, blocked)
 
+    def _difficulty_label(self, song_id: str, difficulty: int) -> str:
+        if 0 <= difficulty < len(_DIFFICULTY_LABELS):
+            if difficulty == 3:
+                try:
+                    chart = self.catalog.chart(song_id, difficulty)
+                except Exception:
+                    chart = None
+                # 7.0 Inscribed charts occupy the BYD slot with alias 1.
+                if chart is not None and chart.rating_class_alias == 1:
+                    return "INS"
+            return _DIFFICULTY_LABELS[difficulty]
+        return str(difficulty)
+
     def _scores_view(self, query: BrowseQuery) -> SectionView:
         availability = self._availability(SaveKind.SCORE_DATABASE)
         items: list[ItemView] = []
@@ -982,11 +1002,7 @@ class SaveSession:
                     song_label = song.title.resolve(self.request.locale, default=record.key.song_id)
                 except Exception:
                     song_label = "Custom chart"
-                difficulty = (
-                    ("PST", "PRS", "FTR", "BYD", "ETR")[record.key.difficulty]
-                    if record.key.difficulty in range(5)
-                    else str(record.key.difficulty)
-                )
+                difficulty = self._difficulty_label(record.key.song_id, record.key.difficulty)
                 clear = clears.get(record.key)
                 fields = (
                     FieldView(

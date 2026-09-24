@@ -22,7 +22,7 @@ def _version() -> str:
 def _root_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="arcsavelab",
-        description="Arcaea 7.0.255c save editor and integrity verifier",
+        description="Arcaea 7.0.260c save editor and integrity verifier",
     )
     parser.add_argument("--version", action="version", version=f"%(prog)s {_version()}")
     subparsers = parser.add_subparsers(dest="command")
@@ -37,7 +37,7 @@ def _root_parser() -> argparse.ArgumentParser:
         nargs="?",
         default="info",
     )
-    catalog.add_argument("--version", default="7.0.255c", dest="game_version")
+    catalog.add_argument("--version", default="7.0.260c", dest="game_version")
     catalog.add_argument("--apk", type=Path)
     catalog.add_argument("--out", type=Path)
     catalog.add_argument("--old", type=Path)
@@ -62,7 +62,7 @@ def _add_tui_arguments(parser: argparse.ArgumentParser) -> None:
     parser.add_argument(
         "--force-profile",
         action="store_true",
-        help="explicitly edit a structurally mismatched save with the 7.0.255c profile",
+        help="explicitly edit a structurally mismatched save with the selected version profile",
     )
 
 

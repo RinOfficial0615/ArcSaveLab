@@ -216,6 +216,9 @@ class Chart:
     hidden_until: str | None = None
     hidden_until_unlocked: bool = False
     world_unlock: bool = False
+    # 7.0 songlist ratingClassAlias: a BYD-slot chart with alias 1 is an
+    # Inscribed (INS) chart. None keeps pre-7.0 catalogs lossless.
+    rating_class_alias: int | None = None
 
     def __post_init__(self) -> None:
         if not self.song_id:

@@ -26,6 +26,47 @@ SECTION_NAMES = {
 }
 
 
+# Difficulty label styles follow the game's own difficulty hues. PST/PRS/FTR/BYD
+# are the native constants of SongDifficulty::ColorForDifficultyClass in the game
+# binary (#0a82be / #648c3c / #50194b / #822328); ETR and INS follow the 7.0
+# multiplayer difficulty-tag textures (#705080 / #203090). The game targets its
+# light song-select background, so every hue is re-exposed for this app's dark
+# surfaces (#10141e) in OKLCH. Within the purple family the pairs are pulled
+# apart on purpose: FTR is the vivid pink-leaning magenta (h~335), ETR a muted
+# deeper blue-violet (h~299, 36 degrees away), and INS the light blue-leaning
+# periwinkle (h~269).
+DIFFICULTY_STYLES = {
+    "PST": "#5bb1ea",
+    "PRS": "#85bb4f",
+    "FTR": "#e377ce",
+    "BYD": "#ef7977",
+    "ETR": "#a48dd3",
+    "INS": "#8da5ea",
+}
+
+# Clear-type styles re-expose the hues of the game's clear-badge textures on the
+# dark background in OKLCH. The purple-family trio is split across hue AND
+# lightness: Track Lost is the deep crimson (h~15, L~0.60), Hard Clear the
+# bright bubblegum pink (h~350, L~0.74), Full Recall the violet in between
+# (h~310); Pure Memory stays pale cyan, Easy Clear teal-green, and normal
+# clears neutral.
+CLEAR_TYPE_STYLES = {
+    0: "#bd5f69",  # Track Lost
+    1: "#9ca5b5",  # Normal Clear
+    2: "#ba89de",  # Full Recall
+    3: "#b0dbdb",  # Pure Memory
+    4: "#5cb999",  # Easy Clear
+    5: "#f080b8",  # Hard Clear
+}
+
+# Judgement columns: shiny PURE renders one green step deeper than PURE, FAR and
+# LOST reuse the app's existing amber/red semantics.
+PURE_STYLE = "#77dd99"
+SHINY_PURE_STYLE = "#30c060"
+FAR_STYLE = "#ffd479"
+LOST_STYLE = "#ff8585"
+
+
 class ResponsiveModal[T](ModalScreen[T]):
     """Modal screens are separate roots; inherit compact styling explicitly."""
 
@@ -66,6 +107,15 @@ def field_rich(field: FieldView, tr: Translator, *, detail: bool = False) -> Tex
         elif isinstance(field.value, (int, float)):
             style = "#80caff"
     return Text(value, style=style)
+
+
+def clear_type_rich(field: FieldView, tr: Translator) -> Text:
+    """Color a clear-type choice with the game's own badge hues."""
+    text = Text(field_text(field, tr))
+    style = CLEAR_TYPE_STYLES.get(field.value) if isinstance(field.value, int) else None
+    if style:
+        text.style = style
+    return text
 
 
 def availability_rich(value: Availability, tr: Translator) -> Text:

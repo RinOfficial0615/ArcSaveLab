@@ -106,13 +106,14 @@ def test_verify_cli_emits_schema_v1_through_root_dispatch(
 
 
 def test_catalog_cli_info_and_verify(capsys: pytest.CaptureFixture[str]) -> None:
-    assert main(["catalog", "info", "--version", "7.0.255c"]) == 0
+    assert main(["catalog", "info"]) == 0
     info = capsys.readouterr().out
-    assert "ArcSaveLab catalog 7.0.255c" in info
-    assert "songs: 553" in info
+    assert "ArcSaveLab catalog 7.0.260c" in info
+    assert "songs: 554" in info
+    assert "charts: 1837" in info
     assert "partners: 100" in info
 
-    assert main(["catalog", "verify", "--version", "7.0.255c"]) == 0
+    assert main(["catalog", "verify"]) == 0
     verified = capsys.readouterr().out
     assert "valid=True" in verified
     assert "source_asset_count=36" in verified

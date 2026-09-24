@@ -25,12 +25,14 @@ def check(directory: Path) -> None:
             if BLOCKED_PARTS.intersection(path.parts) or path.suffix in BLOCKED_SUFFIXES:
                 raise SystemExit(f"unexpected private/build artifact: {artifact.name}: {name}")
         if artifact.suffix == ".whl":
-            required = {
-                "arcsavelab/ui/styles.tcss",
-                "arcsavelab/resources/catalog/7.0.255c/catalog.json",
-            }
+            required = {"arcsavelab/ui/styles.tcss"}
             if not required.issubset(names):
                 raise SystemExit("wheel is missing runtime resources")
+            if not any(
+                PurePosixPath(name).match("arcsavelab/resources/catalog/*/catalog.json")
+                for name in names
+            ):
+                raise SystemExit("wheel is missing a bundled game catalog")
         print(f"PASS {artifact.name}: {len(names)} entries; no private reference files")
 
 

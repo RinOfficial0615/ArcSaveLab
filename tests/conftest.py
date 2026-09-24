@@ -95,7 +95,7 @@ def _create_st3(path: Path) -> None:
                 "nearCount,missCount,date,songId,songDifficulty,modifier,health,ct) "
                 "VALUES(?,?,?,?,?,?,?,?,?,?,?,?)",
                 (
-                    "7.0.255c",
+                    "7.0.260c",
                     score,
                     shiny,
                     pure,
